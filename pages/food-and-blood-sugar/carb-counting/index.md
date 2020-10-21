@@ -12,7 +12,7 @@ Meal planning with carb counting is another type of meal planning done by adding
 
 The following all 1 carb choice (about 15 grams of carbohydrate)
 
-- Grains & Starches
+- Grains & starches
   - White & brown bread - 1 thin slice of bread
   - White & brown rice - 1/3 cup cooked
   - Pasta & noodles - 1/3 cup cooked

@@ -1,0 +1,7 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/food-and-blood-sugar/the-basics": "pages/food-and-blood-sugar/the-basics.js",
+  "/": "pages/index.js"
+}

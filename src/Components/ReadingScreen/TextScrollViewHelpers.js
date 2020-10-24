@@ -108,5 +108,5 @@ export function firstSubSection(readingArray, sectionId) {
   const section = getSection(readingArray, sectionId);
   const subSections = section.sections;
   const firstSubSection = subSections[0];
-  return firstSubSection;
+  return [section, firstSubSection];
 }

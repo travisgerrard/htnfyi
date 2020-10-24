@@ -106,14 +106,18 @@ function NextSectionButton({ route }) {
         );
         setNextOnReadingList({
           section: `${Number(sectionId) + 1}`,
-          theNextSectionTitle: nextSectionFirstSubSection.title,
-          theNextSectionId: nextSectionFirstSubSection.id,
+          sectionSlug: nextSectionFirstSubSection[0].slug,
+          theNextSectionTitle: nextSectionFirstSubSection[1].title,
+          theNextSectionSlug: nextSectionFirstSubSection[1].slug,
+          theNextSectionId: nextSectionFirstSubSection[1].id,
         });
       }
     } else {
       setNextOnReadingList({
         section: sectionId,
+        sectionSlug: routes[1],
         theNextSectionTitle,
+        theNextSectionSlug,
         theNextSectionId,
       });
     }
@@ -127,6 +131,9 @@ function NextSectionButton({ route }) {
           router
             .push(`/${routes[1]}/${theNextSectionSlug}`)
             .then(() => window.scrollTo(0, 0));
+        } else {
+          updateReadingArray();
+          router.push(`/`).then(() => window.scrollTo(0, 0));
         }
       }}
     >

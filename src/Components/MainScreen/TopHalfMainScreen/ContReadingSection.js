@@ -72,8 +72,11 @@ const ContReadingSection = ({
              ${nextOnReadingList.theNextSectionTitle}.`}
           </RegularText>
           <RegularText>You're making great progress.</RegularText>
-
-          <ReadingButton>Continue Reading</ReadingButton>
+          <Link
+            href={`/${nextOnReadingList.sectionSlug}/${nextOnReadingList.theNextSectionSlug}`}
+          >
+            <ReadingButton>Continue Reading</ReadingButton>
+          </Link>
         </TextContainer>
       ) : (
         <TextContainer>

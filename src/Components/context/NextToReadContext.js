@@ -33,7 +33,9 @@ const clearNextReading = (dispatch) => async () => {
     type: 'setNextOnReadingList',
     payload: {
       section: null,
+      sectionSlug: null,
       theNextSectionTitle: null,
+      theNextSectionSlug: null,
       theNextSectionId: null,
     },
   });

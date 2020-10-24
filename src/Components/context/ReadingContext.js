@@ -19,7 +19,7 @@ const readingReducer = (state, action) => {
 
 const setReadingArray = (dispatch) => async (readingArray) => {
   try {
-    await localStorage.setItem(READING_KEY, JSON.stringify(readingArray));
+    localStorage.setItem(READING_KEY, JSON.stringify(readingArray));
     dispatch({ type: 'setReadingArray', payload: readingArray });
   } catch (error) {
     dispatch({
@@ -31,7 +31,7 @@ const setReadingArray = (dispatch) => async (readingArray) => {
 
 const clearReadingArray = (dispatch) => async () => {
   try {
-    await localStorage.setItem(READING_KEY, JSON.stringify(DATA));
+    localStorage.setItem(READING_KEY, JSON.stringify(DATA));
     dispatch({ type: 'setReadingArray', payload: DATA });
   } catch (error) {
     dispatch({

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
+import IosArrowForward from 'react-ionicons/lib/IosArrowForward';
+import IosCheckmarkCircleOutline from 'react-ionicons/lib/IosCheckmarkCircleOutline';
 
 const Container = styled.div`
   padding: 25px;
@@ -35,9 +37,16 @@ const TopicListItem = styled.p`
   font-family: Helvetica Neue, Arial, sans-serif;
   font-weight: lighter;
   line-height: 1;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0px;
   cursor: pointer;
+`;
+
+const TopicListItemContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  justify-content: space-between;
 `;
 
 function Card({ item }) {
@@ -63,7 +72,15 @@ function Card({ item }) {
         return (
           <>
             <Link href={`/${slug}/${section.slug}`}>
-              <TopicListItem>{section.title}</TopicListItem>
+              <TopicListItemContainer>
+                <TopicListItem>{section.title}</TopicListItem>
+                <div>
+                  {section.hasRead && (
+                    <IosCheckmarkCircleOutline color="rgb(0, 128, 0)" />
+                  )}
+                  <IosArrowForward color="gray" />
+                </div>
+              </TopicListItemContainer>
             </Link>
             <hr />
           </>

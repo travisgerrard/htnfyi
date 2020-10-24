@@ -3,6 +3,8 @@ import { MDXProvider } from '@mdx-js/react';
 import './styles.css';
 import styled from 'styled-components';
 import Link from 'next/link';
+import NextSectionButton from '../src/Components/ReadingScreen/NextSectionButton';
+
 import { Provider as ReadingContextProvider } from '../src/Components/context/ReadingContext';
 import { Provider as NextToReadContextProvider } from '../src/Components/context/NextToReadContext';
 
@@ -96,24 +98,27 @@ const Index = ({ Component, pageProps, router }) => {
           </NextToReadContextProvider>
         </ReadingContextProvider>
       ) : (
-        <>
-          <NavBar>
-            <NavBarButton>
-              Aa: <NavBarButton style={{ cursor: 'pointer' }}>+</NavBarButton> /{' '}
-              <NavBarButton style={{ cursor: 'pointer' }}>-</NavBarButton>
-            </NavBarButton>
-            <Link href="/">
-              <NavBarButton style={{ cursor: 'pointer' }}>Close</NavBarButton>
-            </Link>
-          </NavBar>
-          <BodyContainer>
-            <TextContainer>
-              <MDXProvider components={mdComponents}>
-                <Component {...pageProps} />
-              </MDXProvider>
-            </TextContainer>
-          </BodyContainer>
-        </>
+        <ReadingContextProvider>
+          <NextToReadContextProvider>
+            <NavBar>
+              <NavBarButton>
+                Aa: <NavBarButton style={{ cursor: 'pointer' }}>+</NavBarButton>{' '}
+                / <NavBarButton style={{ cursor: 'pointer' }}>-</NavBarButton>
+              </NavBarButton>
+              <Link href="/">
+                <NavBarButton style={{ cursor: 'pointer' }}>Close</NavBarButton>
+              </Link>
+            </NavBar>
+            <BodyContainer>
+              <TextContainer>
+                <MDXProvider components={mdComponents}>
+                  <Component {...pageProps} />
+                </MDXProvider>
+                <NextSectionButton route={route} />
+              </TextContainer>
+            </BodyContainer>
+          </NextToReadContextProvider>
+        </ReadingContextProvider>
       )}
     </>
   );

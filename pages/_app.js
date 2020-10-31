@@ -2,17 +2,12 @@ import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import './styles.css';
 import styled from 'styled-components';
-import Link from 'next/link';
 import NextSectionButton from '../src/Components/ReadingScreen/NextSectionButton';
+import MainReadingView from '../src/Components/ReadingScreen/MainReadingView';
 
 import { Provider as ReadingContextProvider } from '../src/Components/context/ReadingContext';
 import { Provider as NextToReadContextProvider } from '../src/Components/context/NextToReadContext';
-
-const BodyContainer = styled.div`
-  display: flex;
-  background-color: white;
-  justify-content: center;
-`;
+import { Provider as AuthContextProvider } from '../src/Components/context/AuthContext';
 
 const Header = styled.h1`
   font-size: 24px;
@@ -24,41 +19,6 @@ const RegularText = styled.p`
   font-size: 16px;
   font-weight: 400;
   font-family: Helvetica Neue, Arial, sans-serif;
-`;
-
-const NavBar = styled.div`
-  position: relative;
-  background-color: rgb(0, 162, 97);
-  width: 100%;
-  height: 64px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-const NavBarButton = styled.p`
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 24px;
-  font-family: Helvetica Neue, Arial, sans-serif;
-  font-weight: 400;
-  padding: 0px;
-  margin: 0px;
-  padding-left: 16px;
-  padding-right: 16px;
-  line-height: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
-
-const TextContainer = styled.div`
-  max-width: 600px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
-  min-height: 100vh;
 `;
 
 const QuoteBox = styled.div`
@@ -87,40 +47,24 @@ const Index = ({ Component, pageProps, router }) => {
   };
 
   const { route } = router;
-  console.log(route);
 
   return (
-    <>
-      {route === '/' ? (
-        <ReadingContextProvider>
-          <NextToReadContextProvider>
+    <AuthContextProvider>
+      <ReadingContextProvider>
+        <NextToReadContextProvider>
+          {route === '/' ? (
             <Component {...pageProps} />
-          </NextToReadContextProvider>
-        </ReadingContextProvider>
-      ) : (
-        <ReadingContextProvider>
-          <NextToReadContextProvider>
-            <NavBar>
-              <NavBarButton>
-                Aa: <NavBarButton style={{ cursor: 'pointer' }}>+</NavBarButton>{' '}
-                / <NavBarButton style={{ cursor: 'pointer' }}>-</NavBarButton>
-              </NavBarButton>
-              <Link href="/">
-                <NavBarButton style={{ cursor: 'pointer' }}>Close</NavBarButton>
-              </Link>
-            </NavBar>
-            <BodyContainer>
-              <TextContainer>
-                <MDXProvider components={mdComponents}>
-                  <Component {...pageProps} />
-                </MDXProvider>
-                <NextSectionButton route={route} />
-              </TextContainer>
-            </BodyContainer>
-          </NextToReadContextProvider>
-        </ReadingContextProvider>
-      )}
-    </>
+          ) : (
+            <MainReadingView>
+              <MDXProvider components={mdComponents}>
+                <Component {...pageProps} />
+              </MDXProvider>
+              <NextSectionButton route={route} />
+            </MainReadingView>
+          )}
+        </NextToReadContextProvider>
+      </ReadingContextProvider>
+    </AuthContextProvider>
   );
 };
 

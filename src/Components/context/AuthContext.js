@@ -1,39 +1,55 @@
-import { AsyncStorage } from 'react-native';
 import createDataContext from './createDataContext';
-import authApi from '../../api';
-import { navigate } from '../navigationRef';
-import * as Network from 'expo-network';
+// import authApi from './api';
+import { useRouter } from 'next/router';
 
 const authReducer = (state, action) => {
   switch (action.type) {
     case 'add_error':
-      return { ...state, errorMessage: action.payload };
+      return { ...state, errorMessage: action.payload, isLoading: false };
     case 'signin':
-      return { token: action.payload, errorMessage: '' };
+      return {
+        ...state,
+        token: action.payload,
+        errorMessage: '',
+        isLoading: false,
+      };
+    case 'disclaimer':
+      return { ...state, disclaimer: true, errorMessage: '', isLoading: false };
     case 'clear_error_message':
-      return { ...state, errorMessage: '' };
+      return { ...state, errorMessage: '', isLoading: false };
     case 'set_account_details':
-      return { ...state, accountDetails: action.payload };
+      return { ...state, accountDetails: action.payload, isLoading: false };
     case 'signout':
-      return { token: null, errorMessage: '' };
+      return { ...state, token: null, errorMessage: '', isLoading: false };
+    case 'stopLoading':
+      return { ...state, isLoading: false };
     default:
       return state;
   }
 };
 
 const tryLocalSignin = (dispatch) => async () => {
-  const token = await AsyncStorage.getItem('token');
+  const token = localStorage.getItem('token');
+  const disclaimer = localStorage.getItem('disclaimer');
 
-  if (token) {
+  if (token && disclaimer) {
     dispatch({ type: 'signin', payload: token });
-    navigate('Main');
-  } else {
-    navigate('Auth');
+    dispatch({ type: 'disclaimer' });
+
+    // navigate('Main');
+    // } else {
+    //   navigate('Auth');
   }
+  dispatch({ type: 'stopLoading' });
 };
 
 const clearErrorMessage = (dispatch) => () => {
   dispatch({ type: 'clear_error_message' });
+};
+
+const agreeToDisclaimer = (dispatch) => async () => {
+  await localStorage.setItem('disclaimer', 'true');
+  dispatch({ type: 'disclaimer' });
 };
 
 const signin = (dispatch) => async (accessCode) => {
@@ -60,7 +76,7 @@ const signin = (dispatch) => async (accessCode) => {
     // const response = await authApi.post('/', accessCode);
 
     if (accessCode.accessCode === '12345') {
-      await AsyncStorage.setItem('token', accessCode.accessCode);
+      await localStorage.setItem('token', accessCode.accessCode);
       dispatch({ type: 'signin', payload: accessCode.accessCode });
     } else {
       dispatch({
@@ -79,15 +95,17 @@ const signin = (dispatch) => async (accessCode) => {
 };
 
 const signout = (dispatch) => async () => {
-  await AsyncStorage.removeItem('token');
+  // const router = useRouter();
+
+  await localStorage.removeItem('token');
   dispatch({
     type: 'signout',
   });
-  if (Platform.OS === 'web') {
-    Router.push('/');
-  } else {
-    navigate('loginFlow');
-  }
+  // if (Platform.OS === 'web') {
+  //   Router.push('/');
+  // } else {
+  //   navigate('loginFlow');
+  // }
 };
 
 export const { Provider, Context } = createDataContext(
@@ -97,6 +115,13 @@ export const { Provider, Context } = createDataContext(
     signout,
     clearErrorMessage,
     tryLocalSignin,
+    agreeToDisclaimer,
   },
-  { token: null, errorMessage: '', accountDetails: null }
+  {
+    token: null,
+    disclaimer: null,
+    errorMessage: '',
+    accountDetails: null,
+    isLoading: true,
+  }
 );

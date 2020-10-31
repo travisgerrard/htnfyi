@@ -69,7 +69,7 @@ const ContReadingSection = ({
           <RegularText>Next up is</RegularText>
           <RegularText>
             {`
-             ${nextOnReadingList.theNextSectionTitle}.`}
+             ${nextOnReadingList.theNextSectionTitle}`}
           </RegularText>
           <RegularText>You're making great progress.</RegularText>
           <Link

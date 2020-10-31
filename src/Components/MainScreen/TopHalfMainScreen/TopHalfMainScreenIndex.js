@@ -49,8 +49,8 @@ function TopHalfMainScreenIndex({ percent, offsetPercent, nextOnReadingList }) {
         percentage={percent}
         trailStrokeColor="rgb(0, 122, 73)"
         strokeColor="rgb(0, 243, 146)"
-        strokeWidth="2px"
-        trailStrokeWidth="2px"
+        strokeWidth={2}
+        trailStrokeWidth={2}
         textColor="rgba(255, 255, 255, 0.75)"
       />
       <ContReadingSection

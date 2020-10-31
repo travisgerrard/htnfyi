@@ -16,6 +16,8 @@ import {
   nextSectionSlug,
 } from './TextScrollViewHelpers';
 
+const LAST_SECTION_ID = '7';
+
 import { Context as ReadingContext } from '../context/ReadingContext';
 import { Context as NextToReadContext } from '../context/NextToReadContext';
 
@@ -33,14 +35,14 @@ const NextSectionButtonContainer = styled.div`
   font-family: Helvetica Neue, Arial, sans-serif;
   line-height: 1.2;
   margin-bottom: 16px;
-  margin-top: 200px;
+  margin-top: 100px;
   transition: all 0.25s;
   cursor: pointer;
   &:hover {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
   }
   &:active {
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
   }
 `;
 
@@ -61,6 +63,10 @@ function NextSectionButton({ route }) {
   const { setNextOnReadingList } = useContext(NextToReadContext);
 
   const section = getSectionFromSlugs(readingArray, routes[1]);
+  // If it's not a diabetes section
+  if (!section) {
+    return null;
+  }
   const subSections = section.sections;
   const subSection = getSubsectionFromSlug(subSections, routes[2]);
   const sectionId = section.id;
@@ -97,7 +103,7 @@ function NextSectionButton({ route }) {
     setReadingArray(updatedReadingArray);
 
     if (theNextSectionId === 'Close Section') {
-      if (sectionId === '6') {
+      if (sectionId === LAST_SECTION_ID) {
         // Your done
       } else {
         const nextSectionFirstSubSection = firstSubSection(

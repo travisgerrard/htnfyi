@@ -5,7 +5,10 @@ import IosArrowForward from 'react-ionicons/lib/IosArrowForward';
 import IosCheckmarkCircleOutline from 'react-ionicons/lib/IosCheckmarkCircleOutline';
 
 const Container = styled.div`
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-top: 15px;
 `;
 
 const Headline = styled.p`
@@ -70,7 +73,7 @@ function Card({ item }) {
       <hr />
       {sections.map((section, index) => {
         return (
-          <>
+          <React.Fragment key={section.id}>
             <Link href={`/${slug}/${section.slug}`}>
               <TopicListItemContainer>
                 <TopicListItem>{section.title}</TopicListItem>
@@ -83,7 +86,7 @@ function Card({ item }) {
               </TopicListItemContainer>
             </Link>
             <hr />
-          </>
+          </React.Fragment>
         );
       })}
     </Container>

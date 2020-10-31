@@ -1,16 +1,64 @@
 import React, { useState, useContext, useEffect } from 'react';
 import styled from 'styled-components';
+import IosArrowDropup from 'react-ionicons/lib/IosArrowDropup';
+import IosArrowDropdown from 'react-ionicons/lib/IosArrowDropdown';
+import IosMenu from 'react-ionicons/lib/IosMenu';
 import Card from './Card/Card';
 import TopHalfMainScreenIndex from './TopHalfMainScreen/TopHalfMainScreenIndex';
 import { Context as ReadingContext } from '../context/ReadingContext';
 import { Context as NextToReadContext } from '../context/NextToReadContext';
+import { useRouter } from 'next/router';
+import VM_Small from './VM_Small.png';
 
-const TOTAL_NUMBER_OF_SECTIIONS = 26;
+const TOTAL_NUMBER_OF_SECTIIONS = 29;
 
 const Container = styled.div`
   height: 100%;
   width: 100%;
   overflow-y: scroll;
+`;
+
+const Menu = styled.div`
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  opacity: ${(props) => (props.listFullScreen === '50vh' ? '100%' : '0%')};
+  transition: all 0.25s;
+
+  svg {
+    transition: all 0.25s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  img {
+    background-color: white;
+    margin-right: 26px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 40px;
+    width: 55px;
+    object-fit: contain;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: all 0.25s;
+
+    &:hover {
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+      opacity: 0.9;
+    }
+    &:active {
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+      opacity: 0.8;
+    }
+  }
 `;
 
 const TopHalfContainer = styled.div`
@@ -28,9 +76,10 @@ const TopHalfContainer = styled.div`
 `;
 
 const Title = styled.div`
-  color: #000;
-  text-align: center;
-  font-size: 16px;
+  position: relative;
+  float: right;
+  padding-right: 26px;
+  padding-top: 16px;
 `;
 
 const StyledCardContainer = styled.div`
@@ -62,13 +111,13 @@ export const NEXT_READING_KEY = 'NEXT_READING';
 function VerticalHalfPaginator() {
   const { setReadingArray } = useContext(ReadingContext);
   const { setNextOnReadingList } = useContext(NextToReadContext);
+  const router = useRouter();
 
   useEffect(() => {
     async function firstLoad() {
       try {
         const value = localStorage.getItem(READING_KEY);
         if (value !== null) {
-          console.log('first load ran');
           const readingArray = JSON.parse(value);
           setReadingArray(readingArray);
         }
@@ -99,6 +148,24 @@ function VerticalHalfPaginator() {
 
   return (
     <Container>
+      <Menu listFullScreen={listFullScreen}>
+        <IosMenu
+          color="white"
+          fontSize="32px"
+          style={{ padding: '26px', cursor: 'pointer' }}
+          onClick={() =>
+            router.push(`/about`).then(() => window.scrollTo(0, 0))
+          }
+        />
+        <img
+          src={VM_Small}
+          onClick={() =>
+            router
+              .push(`https://www.virginiamason.org`)
+              .then(() => window.scrollTo(0, 0))
+          }
+        />
+      </Menu>
       <TopHalfContainer listFullScreen={listFullScreen}>
         <TopHalfMainScreen offsetPercent={offsetPercent} />
       </TopHalfContainer>
@@ -135,7 +202,11 @@ const CardsArray = ({ item, setListFullScreen, listFullScreen }) => {
           setListFullScreen(listFullScreen === '50vh' ? '0vh' : '50vh')
         }
       >
-        Up
+        {listFullScreen === '50vh' ? (
+          <IosArrowDropup fontSize="32px" style={{ cursor: 'pointer' }} />
+        ) : (
+          <IosArrowDropdown fontSize="32px" style={{ cursor: 'pointer' }} />
+        )}
       </Title>
       <Card key={readingItem[0].id} item={readingItem[0]} />
     </StyledCard>
@@ -153,7 +224,6 @@ const TopHalfMainScreen = ({ offsetPercent }) => {
 
   useEffect(() => {
     readingProgress();
-    console.log('This ran');
   }, [readingArray]);
 
   function readingProgress() {

@@ -56,12 +56,12 @@ const NavBarButton = styled.p`
   align-items: center;
   cursor: pointer;
   transition: all 0.25s;
-
+  opacity: ${(props) => (props.grayOutButton ? 0.2 : 1)};
   &:hover {
-    opacity: 0.5;
+    opacity: ${(props) => (props.grayOutButton ? 0.2 : 0.6)};
   }
   &:active {
-    opacity: 0.1;
+    opacity: ${(props) => (props.grayOutButton ? 0.2 : 0.3)};
   }
 `;
 
@@ -114,6 +114,8 @@ export default function MainReadingView({ children }) {
   }, []);
 
   const { textSize } = textState;
+  const increaseTextSizeGrayOut = textSize === '22px';
+  const decreaseTextSizeGrayOut = textSize === '16px';
 
   const mdComponents = {
     h1: (props) => <Header {...props} />,
@@ -137,12 +139,14 @@ export default function MainReadingView({ children }) {
               Aa:{' '}
               <NavBarButton
                 onClick={() => changeTextSize({ textSize, isIncrease: true })}
+                grayOutButton={increaseTextSizeGrayOut}
               >
                 +
               </NavBarButton>{' '}
               /{' '}
               <NavBarButton
                 onClick={() => changeTextSize({ textSize, isIncrease: false })}
+                grayOutButton={decreaseTextSizeGrayOut}
               >
                 -
               </NavBarButton>

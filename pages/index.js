@@ -11,8 +11,6 @@ export default function Index() {
     tryLocalSignin();
   }, []);
 
-  console.log(state);
-
   if (state.isLoading) return null;
 
   if (state.token === null) {

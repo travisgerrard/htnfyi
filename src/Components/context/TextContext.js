@@ -1,54 +1,64 @@
-// to keep track of desired text size...
-
-import React, { useEffect, useState, createContext } from 'react';
-import { AsyncStorage } from 'react-native';
-
+import createDataContext from './createDataContext';
 export const TEXT_KEY = 'TEXT';
 
-export const TextContext = createContext({
-  textSize: 3,
-  setTextSize: () => {},
-});
+const textReducer = (state, action) => {
+  switch (action.type) {
+    case 'changeTextSize':
+      return { ...state, textSize: action.payload };
 
-export const TextContextProvider = (props) => {
-  const setTextSize = async (textSize) => {
-    if (textSize > 5 || textSize < 1) {
-      return;
+    default:
+      return state;
+  }
+};
+
+const changeTextSize = (dispatch) => async ({ textSize, isIncrease }) => {
+  var newTextSize = null;
+  if (isIncrease) {
+    if (textSize === '16px') {
+      newTextSize = '18px';
     }
-
-    setState({ ...state, textSize: textSize });
-    try {
-      await AsyncStorage.setItem(TEXT_KEY, JSON.stringify(textSize));
-    } catch (e) {
-      alert(e);
+    if (textSize === '18px') {
+      newTextSize = '20px';
     }
-  };
-
-  const initState = {
-    textSize: 3,
-    setTextSize: setTextSize,
-  };
-
-  const [state, setState] = useState(initState);
-
-  useEffect(() => {
-    textSetter();
-  }, []);
-
-  async function textSetter() {
-    try {
-      const value = await AsyncStorage.getItem(TEXT_KEY); //null; //
-      if (value !== null) {
-        const textSize = JSON.parse(value);
-
-        setTextSize(textSize);
-      }
-    } catch (error) {
-      console.log(error);
+    if (textSize === '20px') {
+      newTextSize = '22px';
+    }
+  } else {
+    if (textSize === '22px') {
+      newTextSize = '20px';
+    }
+    if (textSize === '20px') {
+      newTextSize = '18px';
+    }
+    if (textSize === '18px') {
+      newTextSize = '16px';
     }
   }
 
-  return (
-    <TextContext.Provider value={state}>{props.children}</TextContext.Provider>
-  );
+  if (newTextSize !== null) {
+    dispatch({ type: 'changeTextSize', payload: newTextSize });
+    localStorage.setItem(TEXT_KEY, newTextSize);
+  }
 };
+
+const setTextSizeOnLoad = (dispatch) => () => {
+  try {
+    const value = localStorage.getItem(TEXT_KEY);
+    if (value !== null) {
+      dispatch({ type: 'changeTextSize', payload: value });
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const { Provider, Context } = createDataContext(
+  textReducer,
+  {
+    changeTextSize,
+    setTextSizeOnLoad,
+  },
+  {
+    textSize: '16px',
+  }
+);

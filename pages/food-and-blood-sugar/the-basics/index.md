@@ -1,3 +1,5 @@
+import CarbTable from './CarbTable.js'
+
 # Food and Blood Sugar
 
 What, how much and when you eat is very important for managing your blood sugar level. How does food affect my blood sugar? This section of the app will focus on two methods of meal planning – the Diabetes Plate and Carbohydrate Counting.
@@ -12,46 +14,99 @@ The foods that contain carbohydrate increase blood glucose the most. They start 
 
 Carbohydrate comes from foods with:
 
-> ### Grains & Starches
->
-> - White & brown bread
-> - White & brown rice
-> - Potatoes
-> - Potato chips
-> - Cereal
-> - Oatmeal
-> - Tortillas
-
-> ### Milks & Yogurt
->
-> - Cow’s milk
-> - Almond milk
-> - Cow's yogurt
-> - Coconut yogurt
-
-> ### Lentils / B eans
->
-> - Hummus
-> - Kidney beans
-> - Refried beans
-> - Chili
-
-> ### Vegetables
->
-> - Non-starchy
-> - Starchy
-
-> ### Fruit
->
-> - Whole fruit
-> - Fruit juice
-> - Dried fruit
-
-> ### Added Sugar
->
-> - All sugar
-> - Pop
-> - Energy drinks
-> - Ice cream
-> - Cookies
-> - Candy
+<CarbTable>
+      <div>
+        <h1> Grains & Starches</h1>
+        <hr />
+        <p>White & brown bread</p>
+        <p>White & brown</p>
+        <p>rice</p>
+        <p>Potatoes</p>
+        <p>Potato chips</p>
+        <p>Cereal</p>
+        <p>Oatmeal</p>
+        <p>Tortillas</p>
+      </div>
+      <div>
+        <h1>
+          Milks & Yogurt
+        </h1>
+        <p>
+          Cow’s milk
+        </p>
+        <p>
+          Almond milk
+        </p>
+        <p>
+          Cow's yogurt
+        </p>
+        <p>
+          Coconut yogurt
+        </p>
+      </div>
+      <div>
+        <h1>
+          Lentils / Beans
+        </h1>
+        <p>
+          Hummus
+        </p>
+        <p>
+          Kidney beans
+        </p>
+        <p>
+          Refried beans
+        </p>
+        <p>
+          Chili
+        </p>
+      </div>
+      <div>
+        <h1>
+          Vegetables
+        </h1>
+        <p>
+          Non-starchy
+        </p>
+        <p>
+          Starchy
+        </p>
+      </div>
+      <div>
+        <h1>
+          Fruit
+        </h1>
+        <p>
+          Whole fruit
+        </p>
+        <p>
+          Fruit juice
+        </p>
+        <p>
+          Dried fruit
+        </p>
+      </div>
+      <div>
+        <h1>
+          Added Sugar
+        </h1>
+        <p>
+          All sugar
+        </p>
+        <p>
+          Pop
+        </p>
+        <p>
+          Energy drinks
+        </p>
+        <p>
+          Ice cream
+        </p>
+        <p>
+          Cookies
+        </p>
+        <p>
+          Candy
+        </p>
+      </div>
+</CarbTable>

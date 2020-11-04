@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 
 function AllPosts() {
-  const [directories, setDirectories] = useState([]);
-
   const postFileNamesTemp =
     preval`
     const fs = require('fs')
@@ -21,27 +19,28 @@ function AllPosts() {
 
     function getDirectoriesRecursive(srcpath) {
       const listOfDirectores = [srcpath, ...flatten(getDirectories(srcpath).map(getDirectoriesRecursive))]
-      const linkToListOfDirectories = listOfDirectores.forEach(element => {
-        return element
+      const linkToListOfDirectories = listOfDirectores.filter(element => {
+        const links = element.split('pages/');
+        if (links.length > 1) {
+          return links[1];
+        }
       });
-      return linkToListOfDirectories;
+      return listOfDirectores;
     }
 
 
 
     module.exports = getDirectoriesRecursive('./pages');` || [];
 
-  console.log(postFileNamesTemp);
-
   return (
     <div>
       React function with all posts
       {postFileNamesTemp.map((linksNames) => {
         const links = linksNames.split('pages/');
-        console.log(links);
+        // console.log(links);
         if (links.length > 1) {
           return (
-            <Link href={links[1]}>
+            <Link href={links[1]} key={links[1]}>
               <div>{links[1]}</div>
             </Link>
           );

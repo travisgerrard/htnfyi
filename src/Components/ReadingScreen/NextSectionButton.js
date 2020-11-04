@@ -38,6 +38,7 @@ const NextSectionButtonContainer = styled.div`
   margin-top: 100px;
   transition: all 0.25s;
   cursor: pointer;
+  user-select: none;
   &:hover {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
   }
@@ -131,6 +132,17 @@ function NextSectionButton({ route }) {
 
   return (
     <NextSectionButtonContainer
+      onTouchEnd={() => {
+        if (theNextSectionTitle !== 'Close Section') {
+          updateReadingArray();
+          router
+            .push(`/${routes[1]}/${theNextSectionSlug}`)
+            .then(() => window.scrollTo(0, 0));
+        } else {
+          updateReadingArray();
+          router.push(`/`).then(() => window.scrollTo(0, 0));
+        }
+      }}
       onClick={() => {
         if (theNextSectionTitle !== 'Close Section') {
           updateReadingArray();

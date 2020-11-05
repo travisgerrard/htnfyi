@@ -98,8 +98,10 @@ const QuoteBox = styled.div`
 `;
 
 const Image = styled.img`
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+  margin: auto;
+  display: block;
 `;
 
 export default function MainReadingView({ children }) {

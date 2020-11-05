@@ -11,7 +11,7 @@ The Hemoglobin A1 blood test is drawn and processed at a laboratory.
 The Hemoglobin A1C test measures the percentage of the hemoglobin in red
 blood cells that are coated with sugar.
 
-Like a sugary drink spill on the floor that becomes sticky, as glucose
+Like a sugary drink spilled on the floor that becomes sticky, as glucose
 floats in the blood for a long period of time, glucose sticks to our red
 blood cells. Hemoglobin A1C measures how many of our red-blood cells
 have glucose stuck to them.

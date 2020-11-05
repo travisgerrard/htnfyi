@@ -1,3 +1,5 @@
+import CarbTable from '../the-basics/CarbTable.js'
+
 # The Diabetes Plate Method
 
 ![](https://www.diabetesfoodhub.org/system/thumbs/system/images/articles/AtE_plate-method-vector_1787742770.jpg)
@@ -19,7 +21,7 @@ Non-starchy vegetables have much water and natural fiber (or pulp) that helps st
 > - bean sprouts
 > - beets
 > - broccoli
-> - Brussel sprouts
+> - brussel sprouts
 > - cabbage
 > - carrots
 > - cauliflower
@@ -39,7 +41,7 @@ Non-starchy vegetables have much water and natural fiber (or pulp) that helps st
 > - radishes
 > - spaghetti squash
 > - sugar snap peas
-> - Summer squash (zucchini)
+> - summer squash (zucchini)
 > - tomato
 > - water chestnuts
 
@@ -49,24 +51,56 @@ Fill 25% of your plate with low-fat protein foods.
 
 Food containing protein can come from plant and animal sources:
 
-> Animal foods with protein
->
-> - fish and shellfish
-> - beef
-> - chicken
-> - dairy (milk, yogurt, cheese)
-> - turkey
-> - eggs
-> - pork
-
-> Plant foods with protein\*
->
-> - beans, lentils, hummus
-> - nuts, nut butter
-> - edamame, tofu, tempeh
-> - meat-alternatives
->
-> \*These foods also contain carbohydrate and natural fiber and can be incorporated into the meal plan.
+<CarbTable>
+  <div>
+    <h1>
+      Animal foods with protein
+    </h1>
+    <hr />
+    <p>
+      fish and shellfish
+    </p>
+    <p>
+      beef
+    </p>
+    <p>
+      chicken
+    </p>
+    <p>
+      dairy (milk, yogurt, cheese)
+    </p>
+    <p>
+      turkey
+    </p>
+    <p>
+      eggs
+    </p>
+    <p>
+      pork
+    </p>
+  </div>
+  <div>
+    <h1>
+      Plant foods with protein
+    </h1>
+    <hr />
+    <p>
+      beans, lentils, hummus
+    </p>
+    <p>
+      nuts, nut butter
+    </p>
+    <p>
+      edamame, tofu, tempeh
+    </p>
+    <p>
+      meat-alternatives
+    </p>
+    <p>
+      * These foods also contain carbohydrate and natural fiber and can be incorporated into the meal plan.
+    </p>
+  </div>
+</CarbTable>
 
 ![](https://www.diabetesfoodhub.org/system/user_files/Images/ADA-Diabetes-Plate-Method_step-3.png)
 
@@ -78,20 +112,181 @@ At the same time, foods with carbohydrate have the most effect on blood glucose 
 
 High quality carbohydrate foods are better on blood glucose than low quality carbohydrate foods because they have the natural fiber that digests much slower.
 
-> High-quality carbohydrate foods:
-> Grains:
+High-quality carbohydrate foods:
+<CarbTable>
+
+  <div>
+    <h1>
+      Grains: High-quality
+    </h1>
+    <hr />
+    <p>
+      100% whole-grain bread
+    </p>
+    <p>
+      whole-grain cereal
+    </p>
+    <p>
+      whole-grain and lentil pasta
+    </p>
+    <p>
+      brown and wild rice
+    </p>
+    <p>
+      oatmeal
+    </p>
+    <p>
+      Corn tortilla
+    </p>
+    <p>
+      Popcorn
+    </p>
+    <p>
+      Quinoa
+    </p>
+  </div>
+  <div>
+    <h1>
+      Grains: Lower-quality
+    </h1>
+    <hr />
+    <p>
+      white or “multi-grain” bread made with enriched flour
+    </p>
+    <p>
+      cereal made with enriched flour
+    </p>
+    <p>
+      white or enriched flour
+    </p>
+    <p>
+      white or semolina pasta
+    </p>
+    <p>
+      white rice
+    </p>
+    <p>
+      instant oatmeal
+    </p>
+    <p>
+      white flour tortilla
+    </p>
+  </div>
+
+  <div>
+    <h1>
+      Beans and legumes
+    </h1>
+    <hr />
+    <p>
+      Bean burgers
+    </p>
+    <p>
+      Black, kidney, pinto, and garbanzo beans
+    </p>
+    <p>
+      Hummus
+    </p>
+  </div>
+  <div>
+    <h1>
+      Starchy vegetables
+    </h1>
+    <hr />
+    <p>
+      Corn and green peas
+    </p>
+    <p>
+      acorn squash and butternut squash
+    </p>
+    <p>
+      parsnips
+    </p>
+    <p>
+      plantain
+    </p>
+    <p>
+      pumpkin
+    </p>
+    <p>
+      all types of potatoes
+    </p>
+  </div>
+  <div>
+    <h1>
+      Dairy
+    </h1>
+    <hr />
+    <p>
+      Milk
+    </p>
+    <p>
+      Yogurt (includes almond, coconut, cow, hemp, oat, rice, soy).
+    </p>
+    <p>
+      Note: cheese contains very little carbohydrate by the cheese-making process.
+    </p>
+  </div>
+  <div>
+    <h1>
+      Fruit
+    </h1>
+    <hr />
+    <p>
+      fresh
+    </p>
+    <p>
+      canned
+    </p>
+    <p>
+      frozen
+    </p>
+    <p>
+      dried
+    </p>
+  </div>
+  <div>
+    <h1>
+      Limit lower-quality carbohydrate
+    </h1>
+    <hr />
+    <p>
+      foods with added sugars.
+    </p>
+    <p>
+      Aim to consume less than 10% of your calories from added sugar.
+    </p>
+  </div>
+</CarbTable>
+
+![](https://www.diabetesfoodhub.org/system/user_files/Images/ADA-Diabetes-Plate-Method_step-4.png)
+
+Choose water and beverages that have no calories.
+
+Staying hydrated is very important to your health and managing your blood sugars. Drinking enough water and low-calorie beverages can help lower the amount of glucose that is in your blood. Staying hydrated is also very important for your kidneys to function in filtering out blood.
+
+No-calorie beverages include:
+
+- Water
+- Sparkling water
+- Hot and iced tea
+- Hot and iced coffee
+- Flavored water
+- Diet soda
+
+> Limit high-calorie beverages including:
 >
-> - 100% whole-grain bread
-> - whole-grain cereal
-> - whole-grain and lentil pasta
-> - brown and wild rice
-> - oatmeal
-> - Corn tortilla
-> - Popcorn
-> - Quinoa
+> - fruit juices
+> - regular soda
+> - energy drinks
+> - beverages with added sugar
 >
-> Beans and legumes
+> Added sugars include
 >
-> - Bean burgers
-> - Black, kidney, pinto, and garbanzo beans
-> - Hummus
+> - cane sugar
+> - brown sugar
+> - honey
+> - maple syrup
+> - jam or jelly
+> - agave syrup
+> - high fructose corn syrup

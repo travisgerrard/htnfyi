@@ -20,7 +20,7 @@ Carbohydrate comes from foods with:
         <hr />
         <p>White & brown bread</p>
         <p>White & brown</p>
-        <p>rice</p>
+        <p>Rice</p>
         <p>Potatoes</p>
         <p>Potato chips</p>
         <p>Cereal</p>
@@ -31,6 +31,7 @@ Carbohydrate comes from foods with:
         <h1>
           Milks & Yogurt
         </h1>
+        <hr />
         <p>
           Cow’s milk
         </p>
@@ -48,6 +49,7 @@ Carbohydrate comes from foods with:
         <h1>
           Lentils / Beans
         </h1>
+        <hr />
         <p>
           Hummus
         </p>
@@ -65,6 +67,7 @@ Carbohydrate comes from foods with:
         <h1>
           Vegetables
         </h1>
+        <hr />
         <p>
           Non-starchy
         </p>
@@ -76,6 +79,7 @@ Carbohydrate comes from foods with:
         <h1>
           Fruit
         </h1>
+        <hr />
         <p>
           Whole fruit
         </p>
@@ -90,6 +94,7 @@ Carbohydrate comes from foods with:
         <h1>
           Added Sugar
         </h1>
+        <hr />
         <p>
           All sugar
         </p>
@@ -109,4 +114,5 @@ Carbohydrate comes from foods with:
           Candy
         </p>
       </div>
+
 </CarbTable>

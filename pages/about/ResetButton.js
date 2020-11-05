@@ -48,6 +48,7 @@ function ResetButton() {
           localStorage.clear();
           clearReadingArray();
           clearNextReading();
+          Router.push('/');
           Router.reload(window.location.pathname);
         } else {
           console.log('Cancel Pressed');

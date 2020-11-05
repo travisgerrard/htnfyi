@@ -15,7 +15,7 @@ const Container = styled.div`
     margin-right: 25px;
     margin-bottom: 25px;
     width: 60vw;
-
+    max-width: 400px;
     border-radius: 25px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     p {

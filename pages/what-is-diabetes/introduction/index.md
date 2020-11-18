@@ -1,3 +1,5 @@
+import MultiChoiceQuestion from './MultiChoiceQuestion.js'
+
 # Introduction
 
 Type 2 diabetes is an illness where the body is unable to process the
@@ -16,3 +18,14 @@ long-term effects of diabetes that may occur.
 
 > This program is not a substitute for a provider consultation or visit
 > with a diabetes educator.
+
+<MultiChoiceQuestion
+question={`Diabetes Type 2 diabetes is an illness where the body is unable to process:`}
+answers={
+[
+{answerText: 'Protein', isAnswer: false},
+{answerText: 'Fats', isAnswer: false},
+{answerText: 'Sugar', isAnswer: true},
+]
+}
+/>

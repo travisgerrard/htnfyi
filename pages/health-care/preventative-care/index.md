@@ -61,7 +61,7 @@ assess your diabetes within one month, sooner if necessary.
 
 **Lipids**
 
-> - Lipids are fats that circulate in the blood that come from the food you eat. A high level of fats in the blood adds to the risk of a heart attack or stroke.
+> - Lipids are fats (Cholesterols, Triglycerides) that circulate in the blood that come from the food you eat. A high level of fats in the blood adds to the risk of a heart attack or stroke.
 > - Your diabetes provider may order a lipid blood test at least once a year.
 > - Your diabetes provider may prescribe a medication to help control the lipids in your blood.
 

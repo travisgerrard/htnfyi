@@ -85,6 +85,12 @@ const RegularText = styled.p`
   font-family: Helvetica Neue, Arial, sans-serif;
 `;
 
+const RegularList = styled.li`
+  font-size: ${(props) => props.textSize};
+  font-weight: 400;
+  font-family: Helvetica Neue, Arial, sans-serif;
+`;
+
 const QuoteBox = styled.div`
   background-color: lightgray;
   border-radius: 22px;
@@ -122,6 +128,7 @@ export default function MainReadingView({ children }) {
   const mdComponents = {
     h1: (props) => <Header {...props} />,
     p: (props) => <RegularText textSize={textSize} {...props} />,
+    li: (props) => <RegularList textSize={textSize} {...props} />,
     blockquote: (props) => <QuoteBox textSize={textSize} {...props} />,
     img: (props) => <Image {...props} />,
   };

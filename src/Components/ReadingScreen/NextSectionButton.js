@@ -64,12 +64,18 @@ function NextSectionButton({ route }) {
   const { setNextOnReadingList } = useContext(NextToReadContext);
 
   const section = getSectionFromSlugs(readingArray, routes[1]);
+  console.log(section);
+
   // If it's not a diabetes section
   if (!section) {
     return null;
   }
+
   const subSections = section.sections;
   const subSection = getSubsectionFromSlug(subSections, routes[2]);
+  if (!subSection) {
+    return null;
+  }
   const sectionId = section.id;
   const subSectionId = subSection.id;
 

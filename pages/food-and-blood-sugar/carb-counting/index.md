@@ -1,9 +1,11 @@
 import CarbTable from '../the-basics/CarbTable.js'
+import AdaCopyright from './AdaCopyright.js'
 import CaloriesImage from './calories_on_the_new_nutrition_facts_label.png';
 
 # Carbohydrate “Carb” Counting
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSHhMEgESxFMXnMSsLf6WJj_aJ3Eo3BSyLvEg&usqp=CAU)
+<AdaCopyright />
 
 Our bodies need a certain amount of carbohydrate for energy every day.
 

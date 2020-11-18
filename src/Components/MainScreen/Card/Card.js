@@ -17,6 +17,7 @@ const Headline = styled.p`
   font-family: Helvetica Neue, Arial, sans-serif;
   line-height: 1;
   margin: 0;
+  cursor: pointer;
 `;
 
 const SectionsCompleted = styled.p`
@@ -65,7 +66,9 @@ function Card({ item }) {
 
   return (
     <Container key={id}>
-      <Headline>{title}</Headline>
+      <Link href={`/${slug}`}>
+        <Headline>{title}</Headline>
+      </Link>
       <SectionsCompleted>
         {returnSectionsCompleted()}/{sections.length} LESSONS COMPLETED
       </SectionsCompleted>

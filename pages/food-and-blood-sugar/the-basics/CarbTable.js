@@ -7,6 +7,7 @@ const Container = styled.div`
   flex-direction: row;
   overflow-x: scroll;
   max-width: 85vw;
+
   div {
     flex-shrink: 0;
     background-color: lightgray;

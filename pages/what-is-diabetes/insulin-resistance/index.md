@@ -28,7 +28,7 @@ circulating in the blood which the body cannot use.
 <img src={InsulinResistance03} />
 
 Patients can reduce insulin resistance and help the body become more
-sensitive to inulin by exercising, following a diabetic diet low in
+sensitive to insulin by exercising, following a diabetic diet low in
 carbohydrates and fats, and taking all medications as prescribed. A
 diabetic diet means eating healthy food choices at regular mealtimes.
 

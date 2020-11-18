@@ -31,22 +31,30 @@ function AllPosts() {
 
 
     module.exports = getDirectoriesRecursive('./pages');` || [];
+  var linksToDisplay = [];
+  postFileNamesTemp.forEach((element) => {
+    const links = element.split('pages/');
+    console.log(element);
+    console.log(links);
+    if (links.length > 1) {
+      console.log(links[1]);
+      linksToDisplay.push(links[1]);
+      return links[1];
+    }
+  });
+
+  // console.log(postFileNamesTemp);
+  console.log(linksToDisplay);
 
   return (
     <div>
       React function with all posts
-      {postFileNamesTemp.map((linksNames) => {
-        const links = linksNames.split('pages/');
-        // console.log(links);
-        if (links.length > 1) {
-          return (
-            <Link href={links[1]} key={links[1]}>
-              <div>{links[1]}</div>
-            </Link>
-          );
-        } else {
-          return null;
-        }
+      {linksToDisplay.map((linksNames) => {
+        return (
+          <Link href={linksNames} key={linksNames}>
+            <div>{linksNames}</div>
+          </Link>
+        );
       })}
     </div>
   );

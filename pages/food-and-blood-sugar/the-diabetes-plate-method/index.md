@@ -1,14 +1,17 @@
 import CarbTable from '../the-basics/CarbTable.js'
+import AdaCopyright from '../carb-counting/AdaCopyright.js'
 
 # The Diabetes Plate Method
 
 ![](https://www.diabetesfoodhub.org/system/thumbs/system/images/articles/AtE_plate-method-vector_1787742770.jpg)
+<AdaCopyright />
 
 The diabetes plate method is one of the easiest ways to meal plan. It is a visual guide to meal planning for the right portions of foods to manage your calorie needs from foods.
 
 Tip: Start by using a 9 inch size plate. If your dinner plate is too large, you may use a salad plate.
 
 ![](https://www.diabetesfoodhub.org/system/user_files/Images/ADA-Diabetes-Plate-Method_step-1.png)
+<AdaCopyright />
 
 Vegetables are classified into two groups: “non-starchy” or “starchy”.
 
@@ -46,6 +49,7 @@ Non-starchy vegetables have much water and natural fiber (or pulp) that helps st
 > - water chestnuts
 
 ![](https://www.diabetesfoodhub.org/system/user_files/Images/ADA-Diabetes-Plate-Method_step-2.png)
+<AdaCopyright />
 
 Fill 25% of your plate with low-fat protein foods.
 
@@ -103,6 +107,7 @@ Food containing protein can come from plant and animal sources:
 </CarbTable>
 
 ![](https://www.diabetesfoodhub.org/system/user_files/Images/ADA-Diabetes-Plate-Method_step-3.png)
+<AdaCopyright />
 
 Fill 25% of your plate with high quality carbohydrate foods.
 
@@ -260,6 +265,7 @@ High-quality carbohydrate foods:
 </CarbTable>
 
 ![](https://www.diabetesfoodhub.org/system/user_files/Images/ADA-Diabetes-Plate-Method_step-4.png)
+<AdaCopyright />
 
 Choose water and beverages that have no calories.
 

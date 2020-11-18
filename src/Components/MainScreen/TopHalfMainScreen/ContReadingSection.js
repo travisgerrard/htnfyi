@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
+import { LAST_SECTION_ID } from '../../ReadingScreen/NextSectionButton';
 
 const TextContainer = styled.div`
   display: flex;
@@ -64,19 +65,31 @@ const ContReadingSection = ({
     <div style={[{ opacity: offsetPercent, zIndex: offsetPercent * 100 - 1 }]}>
       {section ? (
         <TextContainer>
-          <TextCallout>Keep Going!</TextCallout>
+          {nextOnReadingList.theNextSectionSlug === 'complete' ? (
+            <>
+              <TextCallout>Congratulations</TextCallout>
+              <RegularText>
+                You have completed the Virginia Mason Diabetes Education
+                Application.
+              </RegularText>
+            </>
+          ) : (
+            <>
+              <TextCallout>Keep Going!</TextCallout>
 
-          <RegularText>Next up is</RegularText>
-          <RegularText>
-            {`
+              <RegularText>Next up is</RegularText>
+              <RegularText>
+                {`
              ${nextOnReadingList.theNextSectionTitle}`}
-          </RegularText>
-          <RegularText>You're making great progress.</RegularText>
-          <Link
-            href={`/${nextOnReadingList.sectionSlug}/${nextOnReadingList.theNextSectionSlug}`}
-          >
-            <ReadingButton>Continue Reading</ReadingButton>
-          </Link>
+              </RegularText>
+              <RegularText>You're making great progress.</RegularText>
+              <Link
+                href={`/${nextOnReadingList.sectionSlug}/${nextOnReadingList.theNextSectionSlug}`}
+              >
+                <ReadingButton>Continue Reading</ReadingButton>
+              </Link>
+            </>
+          )}
         </TextContainer>
       ) : (
         <TextContainer>

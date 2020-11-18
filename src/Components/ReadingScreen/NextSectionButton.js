@@ -16,7 +16,7 @@ import {
   nextSectionSlug,
 } from './TextScrollViewHelpers';
 
-const LAST_SECTION_ID = '7';
+export const LAST_SECTION_ID = '7';
 
 import { Context as ReadingContext } from '../context/ReadingContext';
 import { Context as NextToReadContext } from '../context/NextToReadContext';
@@ -111,7 +111,13 @@ function NextSectionButton({ route }) {
 
     if (theNextSectionId === 'Close Section') {
       if (sectionId === LAST_SECTION_ID) {
-        // Your done
+        setNextOnReadingList({
+          section: sectionId,
+          sectionSlug: routes[1],
+          theNextSectionTitle: 'complete',
+          theNextSectionSlug: 'complete',
+          theNextSectionId: 5,
+        });
       } else {
         const nextSectionFirstSubSection = firstSubSection(
           readingArray,
@@ -157,7 +163,9 @@ function NextSectionButton({ route }) {
             .then(() => window.scrollTo(0, 0));
         } else {
           updateReadingArray();
-          router.push(`/`).then(() => window.scrollTo(0, 0));
+          sectionId === LAST_SECTION_ID
+            ? router.push(`/complete`).then(() => window.scrollTo(0, 0))
+            : router.push(`/`).then(() => window.scrollTo(0, 0));
         }
       }}
     >

@@ -11,8 +11,8 @@ import { Provider as AuthContextProvider } from '../src/Components/context/AuthC
 import { Provider as TextContextProvider } from '../src/Components/context/TextContext';
 
 const Index = ({ Component, pageProps, router }) => {
+  console.log(router);
   const { route } = router;
-  console.log(route);
   return (
     <AuthContextProvider>
       <ReadingContextProvider>

@@ -64,7 +64,6 @@ function NextSectionButton({ route }) {
   const { setNextOnReadingList } = useContext(NextToReadContext);
 
   const section = getSectionFromSlugs(readingArray, routes[1]);
-  console.log(section);
 
   // If it's not a diabetes section
   if (!section) {

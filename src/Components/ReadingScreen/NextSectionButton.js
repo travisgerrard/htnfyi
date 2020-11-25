@@ -147,7 +147,7 @@ function NextSectionButton({ route }) {
         if (theNextSectionTitle !== 'Close Section') {
           updateReadingArray();
           router
-            .push(`/${routes[1]}/${theNextSectionSlug}.html`)
+            .push(`/${routes[1]}/${theNextSectionSlug}`)
             .then(() => window.scrollTo(0, 0));
         } else {
           updateReadingArray();
@@ -158,7 +158,7 @@ function NextSectionButton({ route }) {
         if (theNextSectionTitle !== 'Close Section') {
           updateReadingArray();
           router
-            .push(`/${routes[1]}/${theNextSectionSlug}.html`)
+            .push(`/${routes[1]}/${theNextSectionSlug}`)
             .then(() => window.scrollTo(0, 0));
         } else {
           updateReadingArray();

@@ -4,18 +4,18 @@ In this section we will discuss medications which you can use to control your di
 
 <hr />
 
-[Medication Overview](/medications/medication-overview.html)
+[Medication Overview](/medications/medication-overview)
 
-[Metformin](/medications/metformin.html)
+[Metformin](/medications/metformin)
 
-[Sulfonylureas](/medications/sulfonylureas.html)
+[Sulfonylureas](/medications/sulfonylureas)
 
-[DPP-4 inhibitors](/medications/dpp4-inhibitors.html)
+[DPP-4 inhibitors](/medications/dpp4-inhibitors)
 
-[SGLT2 inhibitors](/medications/sglt2-inhibitors.html)
+[SGLT2 inhibitors](/medications/sglt2-inhibitors)
 
-[GLP-1 receptor agonists](/medications/glp1-agonists.html)
+[GLP-1 receptor agonists](/medications/glp1-agonists)
 
-[Insulin](/medications/insulin.html)
+[Insulin](/medications/insulin)
 
-[Fast Facts](/medications/fast-facts.html)
+[Fast Facts](/medications/fast-facts)

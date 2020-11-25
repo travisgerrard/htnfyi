@@ -4,8 +4,8 @@ Because diabetes affects the body’s ability to use glucose for energy, it is i
 
 <hr />
 
-[Using a glucometer](/what-is-diabetes/using-a-glucometer.html)
+[Using a glucometer](/what-is-diabetes/using-a-glucometer)
 
-[Tracking blood sugar](/what-is-diabetes/tracking-blood-sugars.html)
+[Tracking blood sugar](/what-is-diabetes/tracking-blood-sugars)
 
-[Hemoglobin A1C](/what-is-diabetes/hemoglobin-a1c.html)
+[Hemoglobin A1C](/what-is-diabetes/hemoglobin-a1c)

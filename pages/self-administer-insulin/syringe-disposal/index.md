@@ -10,5 +10,5 @@ Dispose of the filled container in a secure sharps disposal box.
 For more information, visit these websites:
 
 > - [King County Public Health](https://www.kingcounty.gov/depts/health/%20%20%20%20%20%20%20%20%20%20%20environmental-health/toxins-air-quality/needle-disposal.aspx)
-> - [Center for Disease Control](https://www.cdc.gov/niosh/topics/bbp/disposal.html)
+> - [Center for Disease Control](https://www.cdc.gov/niosh/topics/bbp/disposal)
 > - [SafeNeedleDisposal.org](https://safeneedledisposal.org/cdc)

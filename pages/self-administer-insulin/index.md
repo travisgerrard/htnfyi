@@ -4,10 +4,10 @@ In this section you will learn about injecting insulin.
 
 <hr />
 
-[Vial & Syringe](/self-administer-insulin/vial-and-syringe.html)
+[Vial & Syringe](/self-administer-insulin/vial-and-syringe)
 
-[Insulin Pen](/self-administer-insulin/insulin-pen.html)
+[Insulin Pen](/self-administer-insulin/insulin-pen)
 
-[Injections Sites](/self-administer-insulin/injection-sites.html)
+[Injections Sites](/self-administer-insulin/injection-sites)
 
-[Syringe Disposal](/self-administer-insulin/syringe-disposal.html)
+[Syringe Disposal](/self-administer-insulin/syringe-disposal)

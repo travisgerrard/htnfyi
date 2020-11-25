@@ -1,6 +1,10 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
+import {
+  READING_KEY,
+  NEXT_READING_KEY,
+} from '../MainScreen/VerticalHalfPaginator';
 import styled from 'styled-components';
 import IosArrowDropright from 'react-ionicons/lib/IosArrowDropright';
 import {
@@ -62,6 +66,33 @@ function NextSectionButton({ route }) {
   const { state: readingState, setReadingArray } = useContext(ReadingContext);
   const { readingArray } = readingState;
   const { setNextOnReadingList } = useContext(NextToReadContext);
+
+  useEffect(() => {
+    async function firstLoad() {
+      try {
+        const value = localStorage.getItem(READING_KEY);
+        if (value !== null) {
+          const readingArray = JSON.parse(value);
+          setReadingArray(readingArray);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+
+      try {
+        const value = localStorage.getItem(NEXT_READING_KEY);
+
+        if (value !== null) {
+          const nextReadingArray = JSON.parse(value);
+          setNextOnReadingList(nextReadingArray);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    firstLoad();
+  }, []);
 
   const section = getSectionFromSlugs(readingArray, routes[1]);
 

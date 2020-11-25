@@ -13,6 +13,7 @@ import { Provider as TextContextProvider } from '../src/Components/context/TextC
 const Index = ({ Component, pageProps, router }) => {
   const { route } = router;
   console.log(route);
+  console.log(router);
   return (
     <AuthContextProvider>
       <ReadingContextProvider>

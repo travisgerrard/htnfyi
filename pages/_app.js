@@ -11,21 +11,19 @@ import { Provider as AuthContextProvider } from '../src/Components/context/AuthC
 import { Provider as TextContextProvider } from '../src/Components/context/TextContext';
 
 const Index = ({ Component, pageProps, router }) => {
-  const { route, asPath } = router;
-  console.log(router);
+  const { route } = router;
   console.log(route);
-  console.log(asPath);
   return (
     <AuthContextProvider>
       <ReadingContextProvider>
         <NextToReadContextProvider>
           <TextContextProvider>
-            {asPath === '/' ? (
+            {route === '/' ? (
               <Component {...pageProps} />
             ) : (
               <MainReadingView>
                 <Component {...pageProps} />
-                <NextSectionButton route={asPath} />
+                <NextSectionButton route={route} />
               </MainReadingView>
             )}
           </TextContextProvider>

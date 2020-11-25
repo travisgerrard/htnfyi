@@ -81,7 +81,10 @@ function MultiChoiceQuestion({ question, answers }) {
       <SubHeading>{question}</SubHeading>
       {answers.map((question) => {
         return (
-          <QuestionTextFunction isAnswer={question.isAnswer}>
+          <QuestionTextFunction
+            isAnswer={question.isAnswer}
+            key={question.answerText}
+          >
             {question.answerText}
           </QuestionTextFunction>
         );

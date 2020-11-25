@@ -111,6 +111,7 @@ const Image = styled.img`
 `;
 
 export default function MainReadingView({ children }) {
+  console.log(children);
   const { state, tryLocalSignin } = useContext(AuthContext);
   const { state: textState, changeTextSize, setTextSizeOnLoad } = useContext(
     TextContext

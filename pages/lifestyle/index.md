@@ -4,6 +4,6 @@ In this section you will learn about how diet and physical activity impacts your
 
 <hr />
 
-[Eating Well](/lifestyle/eating-well)
+[Eating Well](/lifestyle/eating-well.html)
 
-[Exercise](/lifestyle/exercise)
+[Exercise](/lifestyle/exercise.html)

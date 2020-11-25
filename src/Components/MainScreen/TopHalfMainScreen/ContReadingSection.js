@@ -84,7 +84,7 @@ const ContReadingSection = ({
               </RegularText>
               <RegularText>You're making great progress.</RegularText>
               <Link
-                href={`/${nextOnReadingList.sectionSlug}/${nextOnReadingList.theNextSectionSlug}`}
+                href={`/${nextOnReadingList.sectionSlug}/${nextOnReadingList.theNextSectionSlug}.html`}
               >
                 <ReadingButton>Continue Reading</ReadingButton>
               </Link>

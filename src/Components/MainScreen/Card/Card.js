@@ -77,7 +77,7 @@ function Card({ item }) {
       {sections.map((section, index) => {
         return (
           <React.Fragment key={section.id}>
-            <Link href={`/${slug}/${section.slug}`}>
+            <Link href={`/${slug}/${section.slug}.html`}>
               <TopicListItemContainer>
                 <TopicListItem>{section.title}</TopicListItem>
                 <div>

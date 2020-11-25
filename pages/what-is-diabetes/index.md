@@ -4,12 +4,12 @@ In this section you will learn the diabetes mellitus (DM) basics, regarding what
 
 <hr />
 
-[Introduction](/what-is-diabetes/introduction)
+[Introduction](/what-is-diabetes/introduction.html)
 
-[Understanding Diabetes](/what-is-diabetes/understanding-diabetes)
+[Understanding Diabetes](/what-is-diabetes/understanding-diabetes.html)
 
-[Insulin Resistance](/what-is-diabetes/insulin-resistance)
+[Insulin Resistance](/what-is-diabetes/insulin-resistance.html)
 
-[Diagnosing Diabetes](/what-is-diabetes/diagnosing-diabetes)
+[Diagnosing Diabetes](/what-is-diabetes/diagnosing-diabetes.html)
 
-[Goals of diabetes care](/what-is-diabetes/goals-of-diabetes-care)
+[Goals of diabetes care](/what-is-diabetes/goals-of-diabetes-care.html)

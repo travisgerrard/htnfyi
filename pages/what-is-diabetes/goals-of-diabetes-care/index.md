@@ -31,6 +31,3 @@ your overall health, age and goals of care.
 # Diabetes Education resources
 
 The [YMCA of Seattle offers a Diabetes Prevention Program](https://www.seattleymca.org/programs-for-health/weight-and-nutrition/diabetes-prevention-program) - contact your local YMCA for more information about the program.
-
-Virginia Mason offers a monthly Living Well with Diabetes class.
-Schedule and location Information is available at [Virginia Mason's Classes and Events page](https://www.virginiamason.org/events)

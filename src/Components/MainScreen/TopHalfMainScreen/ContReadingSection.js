@@ -62,7 +62,7 @@ const ContReadingSection = ({
   theNextSectionTitle,
 }) => {
   return (
-    <div style={[{ opacity: offsetPercent, zIndex: offsetPercent * 100 - 1 }]}>
+    <div style={{ opacity: offsetPercent, zIndex: offsetPercent * 100 - 1 }}>
       {section ? (
         <TextContainer>
           {nextOnReadingList.theNextSectionSlug === 'complete' ? (

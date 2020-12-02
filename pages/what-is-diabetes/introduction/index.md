@@ -20,7 +20,7 @@ long-term effects of diabetes that may occur.
 > with a diabetes educator.
 
 <MultiChoiceQuestion
-question={`Diabetes Type 2 diabetes is an illness where the body is unable to process:`}
+question={`Type 2 diabetes is an illness where the body is unable to process:`}
 answers={
 [
 {answerText: 'Protein', isAnswer: false},

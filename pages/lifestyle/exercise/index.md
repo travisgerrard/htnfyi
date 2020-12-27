@@ -1,4 +1,9 @@
+import exercise01 from './exercise01.jpg';
+import exercise02 from './exercise02.jpg';
+
 # Exercise
+
+<img src={exercise01} />
 
 Persons with diabetes are recommended to exercise briskly at least 30
 minutes a day 5 days a week.
@@ -41,3 +46,5 @@ morning.
 >   exercising.
 > - If you are experiencing low sugars when you are exercising, please
 >   talk to your provider about ways to prevent low sugars.{' '}
+
+<img src={exercise02} />

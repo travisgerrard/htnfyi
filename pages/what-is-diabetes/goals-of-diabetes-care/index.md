@@ -1,4 +1,8 @@
+import goalsOfDiabetesCare from './goals-of-diabetes-care.jpg';
+
 # Goals of diabetes care
+
+<img src={goalsOfDiabetesCare} />
 
 The goal of care in treatment of type 2 diabetes is to achieve and
 maintain an ideal blood glucose, healthy fat levels of the blood

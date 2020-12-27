@@ -1,4 +1,10 @@
+import preventativeCare01 from './preventative-care01.jpg';
+import preventativeCare02 from './preventative-care02.jpg';
+import preventativeCare03 from './preventative-care03.jpg';
+
 # Recommended routine care for health
+
+<img src={preventativeCare01} />
 
 **Diabetes Provider Vists**
 
@@ -16,6 +22,8 @@ assess your diabetes within one month, sooner if necessary.
 > - Diabetes can damage the blood vessels of the retina (diabetic retinopathy), potentially leading to blindness.
 > - Diabetes also increases the risk of other serious vision conditions, such as cataracts and glaucoma.
 > - An eye exam is recommended every one to two years.
+
+<img src={preventativeCare02} />
 
 **Foot exam**
 
@@ -69,3 +77,5 @@ assess your diabetes within one month, sooner if necessary.
 
 > - It is recommended that you receive a flu (influenza) vaccine every year.
 > - It is also recommended that you receive a pneumonia (pneumococcal) vaccine.
+
+<img src={preventativeCare03} />

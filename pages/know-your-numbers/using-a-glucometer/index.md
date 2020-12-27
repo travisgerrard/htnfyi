@@ -1,4 +1,8 @@
+import usingAGlucometer from './using-a-glucometer.jpg';
+
 # Testing blood sugar using a glucometer
+
+<img src={usingAGlucometer} />
 
 The most common method of testing blood sugars is using a glucometer.
 

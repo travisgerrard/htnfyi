@@ -1,6 +1,9 @@
 import MultiChoiceQuestion from './MultiChoiceQuestion.js'
+import introduction01 from './introduction01.jpg';
 
 # Introduction
+
+<img src={introduction01} />
 
 Type 2 diabetes is an illness where the body is unable to process the
 glucose (sugar) in your blood from the food you eat.

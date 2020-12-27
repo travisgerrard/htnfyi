@@ -1,4 +1,5 @@
 import CarbTable from './CarbTable.js'
+import theBasics from './the-basics.png';
 
 # Food and Blood Sugar
 
@@ -8,7 +9,7 @@ Eating food is what gives us energy. Calories are energy and come from the amoun
 
 All foods turn into energy or glucose (blood sugar) but at different speeds. Some foods will break down and increase blood sugar more quickly than others. Foods contain a combination of nutrients. Foods with similar amounts of carbohydrate, protein, and fat are put into the same food groups.
 
-![](https://avitahealth.org/wp-content/uploads/2019/09/macronutrients-featured.jpg)
+<img src={theBasics} />
 
 The foods that contain carbohydrate increase blood glucose the most. They start breaking down into glucose immediately in your mouth by the digestive enzymes in your saliva. As these foods travel in your body from your mouth -> stomach -> intestines, they are broken down into glucose that flows into your blood stream. The hormone insulin is the key that gets the sugar out of your blood and into the cells within your body to give you energy. Eating a balance of foods with fiber, protein and fat can stabilize blood glucose.
 

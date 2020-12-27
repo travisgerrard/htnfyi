@@ -1,4 +1,8 @@
+import diagnosingDiabetes01 from './diagnosing-diabetes01.jpg';
+
 # Diagnosing Type 2 Diabetes
+
+<img src={diagnosingDiabetes01} />
 
 Signs and symptoms of type 2 diabetes often develop slowly. People may
 have diabetes for years and not know it.

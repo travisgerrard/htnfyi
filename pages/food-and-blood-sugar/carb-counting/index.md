@@ -1,6 +1,7 @@
 import CarbTable from '../the-basics/CarbTable.js'
 import AdaCopyright from './AdaCopyright.js'
 import CaloriesImage from './calories_on_the_new_nutrition_facts_label.png';
+import carbCounting02 from './carb-counting02.jpg';
 
 # Carbohydrate “Carb” Counting
 
@@ -152,7 +153,7 @@ You can also see how many grams of carbohydrates are in a food by looking at the
 
 The total amount of carbohydrate (listed in grams) is for all starches, dietary fiber, total sugars (including added sugar) and sugar alcohols that are in one serving of this food.
 
-<img src={CaloriesImage} />
+<img src={carbCounting02} />
 
 See the “conversion guide” below. As an example, this food item has 37 grams of total carbohydrate or 2 ½ carbohydrate choices.
 

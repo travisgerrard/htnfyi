@@ -6,7 +6,7 @@
 > - When high blood sugar continues for a long period of time, lasting damage to the body can occur.
 > - Know the signs of high blood sugar. You may have an increased thirst, blurred vision, frequent urination, increased hunger and numbness or tingling of the feet.
 > - High blood sugar occurs when glucose lowering medications are skipped; eat too much food or the wrong food; change or lowered activity levels, and sickness.
-> - Check your blood sugar. If your blood sugar is greater than 300 twice in a row, call your diabetes provider’s office.
+> - Check your blood sugar. If your blood sugar is greater than 300 persistently over 6 to 8 hours, call your diabetes provider’s office.
 > - If your blood sugar is over 400, strongly consider presenting to the Emergency Room or an Urgent Care facility.
 
 **Low blood sugar**

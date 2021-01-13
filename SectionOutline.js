@@ -32,6 +32,12 @@ export const DATA = [
       },
       {
         id: '1_5',
+        title: 'Negative Effects of Hyperglycemia',
+        slug: 'negative-effects-of-hyperglycemia',
+        hasRead: false,
+      },
+      {
+        id: '1_6',
         title: 'Goals of diabetes care',
         slug: 'goals-of-diabetes-care',
         hasRead: false,
@@ -164,13 +170,35 @@ export const DATA = [
 
   {
     id: '6',
-    title: 'Lifestyle',
-    slug: 'lifestyle',
+    title: 'Activity',
+    slug: 'activity',
     subtitle:
-      'In this section you will learn about how diet and physical activity impacts your diabetes management.',
+      'Learn about how to be active when you have diabetes. Used with the permission of the American College of Sports Medicine',
     sections: [
-      { id: '6_1', title: 'Eating Well', slug: 'eating-well', hasRead: false },
-      { id: '6_2', title: 'Exercise', slug: 'exercise', hasRead: false },
+      {
+        id: '6_1',
+        title: 'Getting Started',
+        slug: 'getting-started',
+        hasRead: false,
+      },
+      {
+        id: '6_2',
+        title: 'Aerobic Activity',
+        slug: 'aerobic-activity',
+        hasRead: false,
+      },
+      {
+        id: '6_3',
+        title: 'Strength Training',
+        slug: 'strength-training',
+        hasRead: false,
+      },
+      {
+        id: '6_4',
+        title: 'Other Types of Activity',
+        slug: 'other-types-activity',
+        hasRead: false,
+      },
     ],
   },
   {
@@ -191,13 +219,7 @@ export const DATA = [
         slug: 'what-to-do-if',
         hasRead: false,
       },
-      {
-        id: '7_3',
-        title: 'Negative Effects of Hyperglycemia',
-        slug: 'negative-effects-of-hyperglycemia',
-        hasRead: false,
-      },
-      { id: '7_4', title: 'References', slug: 'references', hasRead: false },
+      { id: '7_3', title: 'References', slug: 'references', hasRead: false },
     ],
   },
 ];

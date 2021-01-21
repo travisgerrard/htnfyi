@@ -1,4 +1,5 @@
 import diagnosingDiabetes01 from './diagnosing-diabetes01.jpg';
+import MultiChoiceQuestion from '../../MultiChoiceQuestion'
 
 # Diagnosing Type 2 Diabetes
 
@@ -25,3 +26,14 @@ have glucose stuck to them.
 A normal A1C is less than 5.7%. An A1C greater than 6.5% or higher on
 two separate tests is a diagnosis of diabetes. An A1C between 5.7 and
 6.4% is generally considered prediabetes.
+
+<MultiChoiceQuestion
+question={`What does an A1C blood test measure?`}
+answers={
+[
+{answerText: 'Average blood sugar over last 2-3 weeks', isAnswer: false},
+{answerText: 'Average blood sugar over last 2-3 months', isAnswer: true},
+{answerText: 'Average blood sugar over last 2-3 years', isAnswer: false},
+]
+}
+/>

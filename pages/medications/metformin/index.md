@@ -1,4 +1,8 @@
+import MedQuickFactBar from '../MedQuickFactBar.js'
+
 # Metformin
+
+<MedQuickFactBar />
 
 **Oral medication.**
 

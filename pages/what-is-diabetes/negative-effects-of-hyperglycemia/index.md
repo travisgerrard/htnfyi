@@ -1,3 +1,5 @@
+import MultiChoiceQuestion from '../../MultiChoiceQuestion'
+
 # Complications of hyperglycemia
 
 **Chronic Kidney Disease**
@@ -32,3 +34,16 @@
 > - Early symptoms include floaters, blurriness, dark areas of vision and difficulty perceiving color.
 > - Over time, blindness can occur.
 > - This is why you should get an eye exam every one to two years.
+
+<MultiChoiceQuestion
+question={`Which of the following is NOT a complications of long term uncontrolled diabetes?`}
+answers={
+[
+{answerText: 'Kidney disease', isAnswer: false},
+{answerText: 'Stroke and heart attack', isAnswer: false},
+{answerText: 'Blindness', isAnswer: false},
+{answerText: 'Foot wounds', isAnswer: false},
+{answerText: 'Baldness', isAnswer: true},
+]
+}
+/>

@@ -10,7 +10,7 @@ import { Context as NextToReadContext } from '../context/NextToReadContext';
 import { useRouter } from 'next/router';
 import VM_Small from './VM_Small.png';
 
-const TOTAL_NUMBER_OF_SECTIIONS = 29;
+const TOTAL_NUMBER_OF_SECTIIONS = 32;
 
 const Container = styled.div`
   height: 100%;

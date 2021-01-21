@@ -1,4 +1,4 @@
-import MultiChoiceQuestion from './MultiChoiceQuestion.js'
+import MultiChoiceQuestion from '../../MultiChoiceQuestion'
 import introduction01 from './introduction01.jpg';
 
 # Introduction

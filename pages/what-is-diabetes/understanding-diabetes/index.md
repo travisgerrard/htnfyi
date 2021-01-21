@@ -1,3 +1,5 @@
+import MultiChoiceQuestion from '../../MultiChoiceQuestion'
+
 # Understanding Type 2 Diabetes
 
 Our bodies use glucose as fuel by taking glucose into cells, the
@@ -20,3 +22,14 @@ Insulin resistance leads to high levels of sugar in the blood
 
 The effect of prolonged high blood sugar levels can cause many health
 problems which we will discuss later.
+
+<MultiChoiceQuestion
+question={`What hormone is needed to facilitate glucose entering cells?`}
+answers={
+[
+{answerText: 'Insulin', isAnswer: true},
+{answerText: 'Thyroid-stimulating hormone (TSH)', isAnswer: false},
+{answerText: 'Glucagon', isAnswer: false},
+]
+}
+/>

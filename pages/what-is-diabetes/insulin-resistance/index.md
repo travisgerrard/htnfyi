@@ -2,6 +2,7 @@ import InsulinResistance01 from './InsulinResistance01.png';
 import InsulinResistance02 from './InsulinResistance02.png';
 import InsulinResistance03 from './InsulinResistance03.png';
 import InsulinResistance04 from './InsulinResistance04.png';
+import MultiChoiceQuestion from '../../MultiChoiceQuestion'
 
 # Understanding insulin resistance
 
@@ -33,3 +34,14 @@ carbohydrates and fats, and taking all medications as prescribed. A
 diabetic diet means eating healthy food choices at regular mealtimes.
 
 <img src={InsulinResistance04} />
+
+<MultiChoiceQuestion
+question={`What happens to blood sugar when the body does not respond to normal insulin signalling?`}
+answers={
+[
+{answerText: 'Blood sugar goes down', isAnswer: false},
+{answerText: 'Blood sugar goes up', isAnswer: true},
+{answerText: 'Blood sugar is unaffected', isAnswer: false},
+]
+}
+/>

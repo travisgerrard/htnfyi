@@ -54,19 +54,6 @@ assess your diabetes within one month, sooner if necessary.
 > - Stay positive and exercise every day. Engage in hobbies you enjoy.
 > - If you should feel very down and lose interest in previous enjoyed activities, withdraw from your support system, or spend the day sleeping, these may be signs of depression. Please reach out to your provider, diabetes educator, family or friends for support.
 
-**Alcohol**
-
-> - Persons with diabetes should be extremely cautious when considering drinking alcohol.
-> - Drinking alcohol can affect your body’s response to your diabetesmedications and prevent the liver from regulating your blood sugar.
-> - Alcohol may make blood glucose rise or fall depending on the amount of alcohol consumed and the medications prescribed.
-> - Check your blood sugar before and after drinking alcohol.
-> - Moderation of alcohol intake is key.
-> - Avoid excessive alcohol consumption.
-> - A standard drink is equal to- 12 oz of beer, a 5 oz glass of wine or 1.5 oz (shot) of liquor.
-> - Men should drink no more than two standard servings of alcohol a day.
-> - Women should drink no more than one standard servings of alcohol a day.
-> - Speak with your provider if you are concerned about your alcohol habits and the effect on your blood sugar.
-
 **Lipids**
 
 > - Lipids are fats (Cholesterols, Triglycerides) that circulate in the blood that come from the food you eat. A high level of fats in the blood adds to the risk of a heart attack or stroke.

@@ -76,7 +76,7 @@ function QuestionTextFunction({ children, isAnswer }) {
 function MultiChoiceQuestion({ question, answers }) {
   return (
     <Container>
-      <Heading>Summerization Question</Heading>
+      <Heading>Review Question</Heading>
       <hr />
       <SubHeading>{question}</SubHeading>
       {answers.map((question) => {

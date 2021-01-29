@@ -104,7 +104,7 @@ const QuoteBox = styled.div`
 `;
 
 const Image = styled.img`
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   margin: auto;
   display: block;

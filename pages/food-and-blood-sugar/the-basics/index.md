@@ -1,5 +1,5 @@
 import CarbTable from './CarbTable.js'
-import theBasics from './the-basics.png';
+import theBasics from './the-basics.jpg';
 
 # Food and Blood Sugar
 

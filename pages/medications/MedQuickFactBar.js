@@ -69,11 +69,10 @@ const CostContainer = styled.div`
   background-color: #32b3c4;
   width: 20%;
   text-align: center;
-  margin: auto;
 `;
 
 const TopContainer = styled.div`
-  height: 50px;
+  height: 40%;
   line-height: 50px;
   border-width: 1px;
   border-color: black;
@@ -88,7 +87,7 @@ const TopContainer = styled.div`
 `;
 
 const BottomContainer = styled.div`
-  height: 75px;
+  height: 100px;
   line-height: 75px;
   background-color: lightgray;
   border-width: 1px;
@@ -116,7 +115,7 @@ function MedQuickFactBar() {
         <TopContainer>Routine</TopContainer>
 
         <BottomContainer>
-          <span>Daily or Twice Daily Pill</span>
+          <span>Daily / Twice Daily Pill</span>
         </BottomContainer>
       </RoutineContainer>
       <LowBloodSugarContainer>
@@ -136,12 +135,16 @@ function MedQuickFactBar() {
         <BottomContainer>None</BottomContainer>
       </WeightChangeContainer>
       <HeartContainer>
-        <TopContainer>Heart Benifit</TopContainer>
+        <TopContainer>
+          <span>Heart Benefit</span>
+        </TopContainer>
 
         <BottomContainer>Mild</BottomContainer>
       </HeartContainer>
       <CostContainer>
-        <TopContainer>Cost</TopContainer>
+        <TopContainer>
+          <span>Cost</span>
+        </TopContainer>
 
         <BottomContainer>Low</BottomContainer>
       </CostContainer>

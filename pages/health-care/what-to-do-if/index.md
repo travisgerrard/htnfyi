@@ -1,14 +1,5 @@
 # What to do if....
 
-**High blood sugar**
-
-> - High blood sugar (hyperglycemia) occurs when there is too much sugar in the blood.
-> - When high blood sugar continues for a long period of time, lasting damage to the body can occur.
-> - Know the signs of high blood sugar. You may have an increased thirst, blurred vision, frequent urination, increased hunger and numbness or tingling of the feet.
-> - High blood sugar occurs when glucose lowering medications are skipped; eat too much food or the wrong food; change or lowered activity levels, and sickness.
-> - Check your blood sugar. If your blood sugar is greater than 300 persistently over 6 to 8 hours, call your diabetes provider’s office.
-> - If your blood sugar is over 400, strongly consider presenting to the Emergency Room or an Urgent Care facility.
-
 **Low blood sugar**
 
 > - Know the signs of low blood sugar. You may feel nervous, sweaty, shaky, weak and have blurred vision.
@@ -18,6 +9,15 @@
 > - Recheck your blood sugar after 15 minutes. If your blood sugar is still < 70 eat or drink an additional 15 grams of sugar and recheck your blood sugar in 15 minutes.`}
 > - If your blood sugar is low after 30 minutes, call 911.
 > - When your blood sugar is over 70mg/dL, eat a snack with carbohydrate and protein.
+
+**High blood sugar**
+
+> - High blood sugar (hyperglycemia) occurs when there is too much sugar in the blood.
+> - When high blood sugar continues for a long period of time, lasting damage to the body can occur.
+> - Know the signs of high blood sugar. You may have an increased thirst, blurred vision, frequent urination, increased hunger and numbness or tingling of the feet.
+> - High blood sugar occurs when glucose lowering medications are skipped; eat too much food or the wrong food; change or lowered activity levels, and sickness.
+> - Check your blood sugar. If your blood sugar is greater than 300 persistently over 6 to 8 hours, call your diabetes provider’s office.
+> - **If your blood sugar is over 400, strongly consider presenting to the Emergency Room or an Urgent Care facility.**
 
 **I get sick**
 

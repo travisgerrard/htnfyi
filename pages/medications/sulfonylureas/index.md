@@ -1,4 +1,15 @@
+import MedQuickFactBar from '../MedQuickFactBar.js'
+
 # Sulfonylureas
+
+<MedQuickFactBar
+a1cText={`1-2%`}
+rountineText={`Daily / Twice Daily Pill`}
+lowBloodSugarText={`Yes - Monitor`}
+weightChangeText={`Gain`}
+heartBenefitText={`Neutral`}
+costText={`Low`}
+/>
 
 **Oral medication.**
 

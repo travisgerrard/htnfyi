@@ -1,4 +1,15 @@
+import MedQuickFactBar from '../MedQuickFactBar.js'
+
 # DPP-4 inhibitors
+
+<MedQuickFactBar
+a1cText={`0.5-1%`}
+rountineText={`Daily`}
+lowBloodSugarText={`No`}
+weightChangeText={`Neutral`}
+heartBenefitText={`Neutral`}
+costText={`High`}
+/>
 
 **Oral medication.**
 

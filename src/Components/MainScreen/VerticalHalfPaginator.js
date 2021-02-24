@@ -1,4 +1,10 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, {
+  useState,
+  useContext,
+  useEffect,
+  useRef,
+  useLayoutEffect,
+} from 'react';
 import styled from 'styled-components';
 import IosArrowDropup from 'react-ionicons/lib/IosArrowDropup';
 import IosArrowDropdown from 'react-ionicons/lib/IosArrowDropdown';
@@ -7,6 +13,7 @@ import Card from './Card/Card';
 import TopHalfMainScreenIndex from './TopHalfMainScreen/TopHalfMainScreenIndex';
 import { Context as ReadingContext } from '../context/ReadingContext';
 import { Context as NextToReadContext } from '../context/NextToReadContext';
+import { Context as MenuScrollContext } from '../context/MenuScrollContext';
 import { useRouter } from 'next/router';
 import VM_Small from './VM_Small.png';
 
@@ -109,11 +116,25 @@ export const READING_KEY = 'READING';
 export const NEXT_READING_KEY = 'NEXT_READING';
 
 function VerticalHalfPaginator() {
+  const myRef = useRef(null);
+
   const { setReadingArray } = useContext(ReadingContext);
   const { setNextOnReadingList } = useContext(NextToReadContext);
+  const { state: menuScrollState, setScrollValue } = useContext(
+    MenuScrollContext
+  );
   const router = useRouter();
 
+  const scrollEvent = (e) => {
+    setScrollValue(e.target.scrollLeft);
+  };
+
+  useLayoutEffect(() => {
+    myRef.current.scrollTo(menuScrollState.scrollPosition, 0);
+  }, []);
+
   useEffect(() => {
+    console.log(menuScrollState);
     async function firstLoad() {
       try {
         const value = localStorage.getItem(READING_KEY);
@@ -169,7 +190,11 @@ function VerticalHalfPaginator() {
       <TopHalfContainer listFullScreen={listFullScreen}>
         <TopHalfMainScreen offsetPercent={offsetPercent} />
       </TopHalfContainer>
-      <StyledCardContainer listFullScreen={listFullScreen}>
+      <StyledCardContainer
+        listFullScreen={listFullScreen}
+        onScroll={scrollEvent}
+        ref={myRef}
+      >
         {readingArray.map((item) => {
           return (
             <CardsArray

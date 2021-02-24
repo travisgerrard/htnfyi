@@ -9,6 +9,7 @@ import { Provider as ReadingContextProvider } from '../src/Components/context/Re
 import { Provider as NextToReadContextProvider } from '../src/Components/context/NextToReadContext';
 import { Provider as AuthContextProvider } from '../src/Components/context/AuthContext';
 import { Provider as TextContextProvider } from '../src/Components/context/TextContext';
+import { Provider as MenuScrollContextProvider } from '../src/Components/context/MenuScrollContext';
 
 const Index = ({ Component, pageProps, router }) => {
   const { route } = router;
@@ -19,14 +20,16 @@ const Index = ({ Component, pageProps, router }) => {
       <ReadingContextProvider>
         <NextToReadContextProvider>
           <TextContextProvider>
-            {route === '/' ? (
-              <Component {...pageProps} />
-            ) : (
-              <MainReadingView>
+            <MenuScrollContextProvider>
+              {route === '/' ? (
                 <Component {...pageProps} />
-                <NextSectionButton route={route} />
-              </MainReadingView>
-            )}
+              ) : (
+                <MainReadingView>
+                  <Component {...pageProps} />
+                  <NextSectionButton route={route} />
+                </MainReadingView>
+              )}
+            </MenuScrollContextProvider>
           </TextContextProvider>
         </NextToReadContextProvider>
       </ReadingContextProvider>

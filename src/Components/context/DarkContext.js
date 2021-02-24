@@ -1,15 +1,15 @@
 import React, { useEffect, useState, createContext } from 'react';
-import { AsyncStorage } from 'react-native';
+import { AsyncStorage } from '@react-native-community/async-storage';
 
 export const DARK_KEY = 'DARK';
 
 export const DarkContext = createContext({
   isDarkMode: false,
-  setDarkMode: () => {}
+  setDarkMode: () => {},
 });
 
-export const DarkContextProvider = props => {
-  const setDarkMode = async isDarkMode => {
+export const DarkContextProvider = (props) => {
+  const setDarkMode = async (isDarkMode) => {
     setState({ ...state, isDarkMode: isDarkMode });
     try {
       await AsyncStorage.setItem(DARK_KEY, JSON.stringify(isDarkMode));
@@ -20,7 +20,7 @@ export const DarkContextProvider = props => {
 
   const initState = {
     isDarkMode: false,
-    setDarkMode: setDarkMode
+    setDarkMode: setDarkMode,
   };
 
   const [state, setState] = useState(initState);

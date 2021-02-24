@@ -4,6 +4,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flex-direction: row;
+  overflow-x: scroll;
+  max-width: 85vw;
   /* background-color: rgb(0, 162, 97); */
   /* padding-top: 10px;
   padding-bottom: 5px;
@@ -31,7 +33,7 @@ const RoutineContainer = styled.div`
   flex-direction: column;
   font-family: Helvetica Neue, Arial, sans-serif;
   background-color: #dbcd4a;
-  width: 20%;
+  width: 25%;
   text-align: center;
 `;
 
@@ -40,7 +42,7 @@ const LowBloodSugarContainer = styled.div`
   flex-direction: column;
   font-family: Helvetica Neue, Arial, sans-serif;
   background-color: #f3b05c;
-  width: 20%;
+  width: 25%;
   text-align: center;
 `;
 
@@ -93,6 +95,8 @@ const BottomContainer = styled.div`
   border-width: 1px;
   border-color: black;
   border-style: solid;
+  padding-left: 5px;
+  padding-right: 5px;
   /* font-weight: bold; */
 
   font-size: 18px;
@@ -116,7 +120,9 @@ function MedQuickFactBar({
       <A1cContainer>
         <TopContainer>A1c↓</TopContainer>
 
-        <BottomContainer>{a1cText}</BottomContainer>
+        <BottomContainer>
+          <span>{a1cText}</span>
+        </BottomContainer>
       </A1cContainer>
       <RoutineContainer>
         <TopContainer>Routine</TopContainer>

@@ -4,6 +4,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flex-direction: row;
+  overflow-x: scroll;
+  max-width: 85vw;
   /* background-color: rgb(0, 162, 97); */
   /* padding-top: 10px;
   padding-bottom: 5px;
@@ -31,7 +33,7 @@ const NameContainer = styled.div`
   flex-direction: column;
   font-family: Helvetica Neue, Arial, sans-serif;
   background-color: white;
-  width: 20%;
+  width: 40%;
   text-align: center;
 `;
 
@@ -40,7 +42,7 @@ const RoutineContainer = styled.div`
   flex-direction: column;
   font-family: Helvetica Neue, Arial, sans-serif;
   background-color: #dbcd4a;
-  width: 20%;
+  width: 25%;
   text-align: center;
 `;
 
@@ -49,7 +51,7 @@ const LowBloodSugarContainer = styled.div`
   flex-direction: column;
   font-family: Helvetica Neue, Arial, sans-serif;
   background-color: #f3b05c;
-  width: 20%;
+  width: 25%;
   text-align: center;
 `;
 
@@ -58,7 +60,7 @@ const WeightChangeContainer = styled.div`
   flex-direction: column;
   font-family: Helvetica Neue, Arial, sans-serif;
   background-color: #727fb5;
-  width: 20%;
+  width: 25%;
   text-align: center;
 `;
 
@@ -67,7 +69,7 @@ const HeartContainer = styled.div`
   flex-direction: column;
   font-family: Helvetica Neue, Arial, sans-serif;
   background-color: #a665a6;
-  width: 20%;
+  width: 25%;
   text-align: center;
 `;
 
@@ -102,6 +104,8 @@ const BottomContainer = styled.div`
   border-width: 1px;
   border-color: black;
   border-style: solid;
+  padding-left: 5px;
+  padding-right: 5px;
   /* font-weight: bold; */
 
   font-size: 18px;
@@ -127,12 +131,24 @@ function MedQuickFactBar() {
       <A1cContainer>
         <TopContainer>A1c↓</TopContainer>
 
-        <BottomContainer>1-2%</BottomContainer>
-        <BottomContainer>1-2%</BottomContainer>
-        <BottomContainer>0.5-1%</BottomContainer>
-        <BottomContainer>0.5-1%</BottomContainer>
-        <BottomContainer>0.8-1.2%</BottomContainer>
-        <BottomContainer>∞</BottomContainer>
+        <BottomContainer>
+          <span>1-2%</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>1-2%</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>0.5-1%</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>0.5-1%</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>0.8-1.2%</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>∞</span>
+        </BottomContainer>
       </A1cContainer>
       <RoutineContainer>
         <TopContainer>Routine</TopContainer>

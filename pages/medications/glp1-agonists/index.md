@@ -1,4 +1,15 @@
+import MedQuickFactBar from '../MedQuickFactBar.js'
+
 # GLP-1 receptor agonists
+
+<MedQuickFactBar
+a1cText={`0.8-1.2%`}
+rountineText={`Weekly / Daily / Twice Daily Injection`}
+lowBloodSugarText={`No`}
+weightChangeText={`Loss`}
+heartBenefitText={`Neutral`}
+costText={`High`}
+/>
 
 **Injection and oral medication.**
 

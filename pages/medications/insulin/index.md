@@ -1,4 +1,15 @@
+import MedQuickFactBar from '../MedQuickFactBar.js'
+
 # Insulin
+
+<MedQuickFactBar
+a1cText={`∞`}
+rountineText={`Daily / Twice Daily Injection`}
+lowBloodSugarText={`Yes - Monitor`}
+weightChangeText={`Gain`}
+heartBenefitText={`Neutral`}
+costText={`Low to High`}
+/>
 
 **Insulin is administered by injection.**
 

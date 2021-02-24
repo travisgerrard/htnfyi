@@ -1,4 +1,15 @@
+import MedQuickFactBar from '../MedQuickFactBar.js'
+
 # SGLT2 inhibitors
+
+<MedQuickFactBar
+a1cText={`0.5-1%`}
+rountineText={`Daily`}
+lowBloodSugarText={`No`}
+weightChangeText={`Loss`}
+heartBenefitText={`Benefit`}
+costText={`High`}
+/>
 
 **Oral medication.**
 

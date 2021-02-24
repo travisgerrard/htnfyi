@@ -26,6 +26,15 @@ const A1cContainer = styled.div`
   text-align: center;
 `;
 
+const NameContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  background-color: white;
+  width: 20%;
+  text-align: center;
+`;
+
 const RoutineContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -72,7 +81,7 @@ const CostContainer = styled.div`
 `;
 
 const TopContainer = styled.div`
-  height: 40%;
+  height: 10%;
   line-height: 50px;
   border-width: 1px;
   border-color: black;
@@ -103,26 +112,48 @@ const BottomContainer = styled.div`
   }
 `;
 
-function MedQuickFactBar({
-  a1cText,
-  rountineText,
-  lowBloodSugarText,
-  weightChangeText,
-  heartBenefitText,
-  costText,
-}) {
+function MedQuickFactBar() {
   return (
     <Container>
+      <NameContainer>
+        <TopContainer>Name</TopContainer>
+        <BottomContainer>Metformin</BottomContainer>
+        <BottomContainer>Sulfonylureas</BottomContainer>
+        <BottomContainer>DPP-4</BottomContainer>
+        <BottomContainer>SGLT2</BottomContainer>
+        <BottomContainer>GLP-1</BottomContainer>
+        <BottomContainer>Insulin</BottomContainer>
+      </NameContainer>
       <A1cContainer>
         <TopContainer>A1c↓</TopContainer>
 
-        <BottomContainer>{a1cText}</BottomContainer>
+        <BottomContainer>1-2%</BottomContainer>
+        <BottomContainer>1-2%</BottomContainer>
+        <BottomContainer>0.5-1%</BottomContainer>
+        <BottomContainer>0.5-1%</BottomContainer>
+        <BottomContainer>0.8-1.2%</BottomContainer>
+        <BottomContainer>∞</BottomContainer>
       </A1cContainer>
       <RoutineContainer>
         <TopContainer>Routine</TopContainer>
 
         <BottomContainer>
-          <span>{rountineText}</span>
+          <span>Daily / Twice Daily Pill</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>Daily / Twice Daily Pill</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>Daily Pill</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>Daily Pill</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>Weekly / Daily / 2x Daily Injection</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>Daily / Twice Daily Injection</span>
         </BottomContainer>
       </RoutineContainer>
       <LowBloodSugarContainer>
@@ -131,7 +162,22 @@ function MedQuickFactBar({
         </TopContainer>
 
         <BottomContainer>
-          <span>{lowBloodSugarText}</span>
+          <span>No</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>Yes - Monitor</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>No</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>No</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>No</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>Yes - Monitor</span>
         </BottomContainer>
       </LowBloodSugarContainer>
       <WeightChangeContainer>
@@ -139,14 +185,24 @@ function MedQuickFactBar({
           <span>Weight Change</span>
         </TopContainer>
 
-        <BottomContainer>{weightChangeText}</BottomContainer>
+        <BottomContainer>Neutral</BottomContainer>
+        <BottomContainer>Gain</BottomContainer>
+        <BottomContainer>Neutral</BottomContainer>
+        <BottomContainer>Loss</BottomContainer>
+        <BottomContainer>Loss</BottomContainer>
+        <BottomContainer>Gain</BottomContainer>
       </WeightChangeContainer>
       <HeartContainer>
         <TopContainer>
           <span>Heart Benefit</span>
         </TopContainer>
 
-        <BottomContainer>{heartBenefitText}</BottomContainer>
+        <BottomContainer>Potential</BottomContainer>
+        <BottomContainer>Neutral</BottomContainer>
+        <BottomContainer>Neutral</BottomContainer>
+        <BottomContainer>Benefit</BottomContainer>
+        <BottomContainer>Neutral</BottomContainer>
+        <BottomContainer>Neutral</BottomContainer>
       </HeartContainer>
       <CostContainer>
         <TopContainer>
@@ -154,7 +210,22 @@ function MedQuickFactBar({
         </TopContainer>
 
         <BottomContainer>
-          <span>{costText}</span>
+          <span>Low</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>Low</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>High</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>High</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>High</span>
+        </BottomContainer>
+        <BottomContainer>
+          <span>Low to High</span>
         </BottomContainer>
       </CostContainer>
     </Container>

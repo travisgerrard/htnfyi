@@ -4,7 +4,8 @@ import MedQuickFactBar from '../MedQuickFactBar.js'
 
 <MedQuickFactBar
 a1cText={`1-2%`}
-rountineText={`Daily / Twice Daily Pill`} lowBloodSugarText={`No`}
+rountineText={`Daily / Twice Daily Pill`}
+lowBloodSugarText={`No`}
 weightChangeText={`Neutral`}
 heartBenefitText={`Potential`}
 costText={`Low`}

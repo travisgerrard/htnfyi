@@ -32,7 +32,7 @@ export const DATA = [
       },
       {
         id: '1_5',
-        title: 'Negative Effects of Hyperglycemia',
+        title: 'Complications of Uncontrolled Diabetes',
         slug: 'negative-effects-of-hyperglycemia',
         hasRead: false,
       },
@@ -215,11 +215,17 @@ export const DATA = [
       },
       {
         id: '7_2',
+        title: 'Low Blood Sugars',
+        slug: 'low-blood-sugar',
+        hasRead: false,
+      },
+      {
+        id: '7_3',
         title: 'What to do if...',
         slug: 'what-to-do-if',
         hasRead: false,
       },
-      { id: '7_3', title: 'References', slug: 'references', hasRead: false },
+      { id: '7_4', title: 'References', slug: 'references', hasRead: false },
     ],
   },
 ];

@@ -1,6 +1,9 @@
 import MultiChoiceQuestion from '../../MultiChoiceQuestion'
+import understanding01 from './understanding01.jpg';
 
 # Understanding Type 2 Diabetes
+
+<img src={understanding01} />
 
 Our bodies use glucose as fuel by taking glucose into cells, the
 building blocks of our body, and changing the glucose into energy.

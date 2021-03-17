@@ -1,4 +1,4 @@
-import aerobicActivity01 from './aerobic-activity01.png';
+import aerobicActivity01 from './aerobic-activity01.jpg';
 import aerobicActivity02 from './aerobic-activity02.png';
 import aerobicActivity03 from './aerobic-activity03.png';
 import aerobicActivity04 from './aerobic-activity04.png';

@@ -1,4 +1,4 @@
-import strengthTraining01 from './strength-training01.png';
+import strengthTraining01 from './strength-training01.jpg';
 import strengthTraining02 from './strength-training02.png';
 import strengthTraining03 from './strength-training03.png';
 import strengthTraining04 from './strength-training04.png';

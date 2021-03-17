@@ -1,4 +1,4 @@
-import otherTypesActivity01 from './other-types-activity01.png';
+import otherTypesActivity01 from './other-types-activity01.jpg';
 import otherTypesActivity02 from './other-types-activity02.png';
 import otherTypesActivity03 from './other-types-activity03.png';
 import otherTypesActivity04 from './other-types-activity04.png';

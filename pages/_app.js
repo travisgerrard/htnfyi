@@ -13,8 +13,8 @@ import { Provider as MenuScrollContextProvider } from '../src/Components/context
 
 const Index = ({ Component, pageProps, router }) => {
   const { route } = router;
-  console.log(route);
-  console.log(router);
+  // console.log(route);
+  // console.log(router);
   return (
     <AuthContextProvider>
       <ReadingContextProvider>

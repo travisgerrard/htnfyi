@@ -17,7 +17,7 @@ import { Context as MenuScrollContext } from '../context/MenuScrollContext';
 import { useRouter } from 'next/router';
 import VM_Small from './VM_Small.png';
 
-const TOTAL_NUMBER_OF_SECTIIONS = 33;
+import { DATA } from '../../../SectionOutline';
 
 const Container = styled.div`
   height: 100%;
@@ -134,13 +134,39 @@ function VerticalHalfPaginator() {
   }, []);
 
   useEffect(() => {
-    console.log(menuScrollState);
+    // console.log(menuScrollState);
     async function firstLoad() {
       try {
         const value = localStorage.getItem(READING_KEY);
         if (value !== null) {
           const readingArray = JSON.parse(value);
-          setReadingArray(readingArray);
+
+          var numberOfSectionsInMaster = numberOfSubSections(DATA);
+          var numberOfObjectsInLocal = numberOfSubSections(readingArray);
+
+          // If master data section number is the same as local secion, return local section
+          if (numberOfSectionsInMaster == numberOfObjectsInLocal) {
+            setReadingArray(readingArray);
+          } else {
+            DATA.forEach((category, i) => {
+              // Assuming no new categories...
+              category.sections.forEach((section, j) => {
+                var masterSectionTitle = section.title;
+                var localSection = readingArray[i].sections[j];
+                if (localSection) {
+                  var localSectionTitle = readingArray[i].sections[j].title;
+                  if (masterSectionTitle !== localSectionTitle) {
+                    // replace local sections with new section from master
+                    readingArray[i].sections[j] = section;
+                  }
+                } else {
+                  // if the local section does not exist...add it
+                  readingArray[i].sections[j] = section;
+                }
+              });
+            });
+            setReadingArray(readingArray);
+          }
         }
       } catch (error) {
         console.log(error);
@@ -258,8 +284,9 @@ const TopHalfMainScreen = ({ offsetPercent }) => {
       }).length;
     });
     const hasReadTotal = hasReadArray.reduce((a, b) => a + b, 0);
+
     const percentHasRead = Math.round(
-      (hasReadTotal / TOTAL_NUMBER_OF_SECTIIONS) * 100
+      (hasReadTotal / numberOfSubSections(DATA)) * 100
     );
 
     setPercentRead(percentHasRead);
@@ -274,3 +301,12 @@ const TopHalfMainScreen = ({ offsetPercent }) => {
     />
   );
 };
+
+function numberOfSubSections(array) {
+  var TOTAL_NUMBER_OF_SECTIIONS = 0;
+
+  array.forEach((category) => {
+    TOTAL_NUMBER_OF_SECTIIONS += category.sections.length;
+  });
+  return TOTAL_NUMBER_OF_SECTIIONS;
+}

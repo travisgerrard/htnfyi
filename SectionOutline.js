@@ -221,11 +221,23 @@ export const DATA = [
       },
       {
         id: '7_3',
+        title: 'Doctor Visit Prep',
+        slug: 'doctor-visit-prep',
+        hasRead: false,
+      },
+      {
+        id: '7_4',
+        title: 'Setting Goals',
+        slug: 'setting-goals',
+        hasRead: false,
+      },
+      {
+        id: '7_5',
         title: 'What to do if...',
         slug: 'what-to-do-if',
         hasRead: false,
       },
-      { id: '7_4', title: 'References', slug: 'references', hasRead: false },
+      { id: '7_6', title: 'References', slug: 'references', hasRead: false },
     ],
   },
 ];

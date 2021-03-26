@@ -33,6 +33,11 @@ export default class MyDocument extends Document {
       <Html lang={this.props.lang || 'en'}>
         <Head>
           <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-13VDQFWFTM"
+          ></script>
+
+          <script
             dangerouslySetInnerHTML={{
               __html: `
               window.dataLayer = window.dataLayer || [];

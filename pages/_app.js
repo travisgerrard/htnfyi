@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import './styles.css';
+import { useRouter } from 'next/router';
+
 import styled from 'styled-components';
 import NextSectionButton from '../src/Components/ReadingScreen/NextSectionButton';
 import MainReadingView from '../src/Components/ReadingScreen/MainReadingView';
@@ -11,8 +13,27 @@ import { Provider as AuthContextProvider } from '../src/Components/context/AuthC
 import { Provider as TextContextProvider } from '../src/Components/context/TextContext';
 import { Provider as MenuScrollContextProvider } from '../src/Components/context/MenuScrollContext';
 
+import * as ga from '../lib/ga';
+
 const Index = ({ Component, pageProps, router }) => {
   const { route } = router;
+
+  const routerForUseEffect = useRouter();
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url);
+    };
+    //When the component is mounted, subscribe to router changes
+    //and log those page views
+    routerForUseEffect.events.on('routeChangeComplete', handleRouteChange);
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method
+    return () => {
+      routerForUseEffect.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [routerForUseEffect.events]);
+
   // console.log(route);
   // console.log(router);
   return (

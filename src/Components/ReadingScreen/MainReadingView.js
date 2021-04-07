@@ -67,9 +67,10 @@ const NavBarButton = styled.p`
 
 const TextContainer = styled.div`
   max-width: 600px;
-  padding-left: 25px;
+  padding: 25px;
+  /* padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 25px; */
   min-height: 100vh;
 `;
 
@@ -101,6 +102,7 @@ const QuoteBox = styled.div`
   font-family: Helvetica Neue, Arial, sans-serif;
   line-height: 1.2;
   margin-bottom: 16px;
+  margin-top: 16px;
 `;
 
 const Image = styled.img`

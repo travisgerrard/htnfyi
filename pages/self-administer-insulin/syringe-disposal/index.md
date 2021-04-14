@@ -1,4 +1,8 @@
+import syringeDisposal from './SyringeDisposal.jpg';
+
 # How to Properly Dispose Used Syringe Needles
+
+<img src={syringeDisposal} />
 
 Do not attempt to recap a used syringe needle.
 

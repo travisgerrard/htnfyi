@@ -1,4 +1,8 @@
+import alcohol01 from './alcohol-01.jpg';
+
 # Alcohol
+
+<img src={alcohol01} />
 
 Alcohol can affect blood glucose in different ways. It is recommended to ask your healthcare team how alcohol will affect your overall health and if it is will interact with medications you are taking.
 

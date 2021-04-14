@@ -34,8 +34,6 @@ const Index = ({ Component, pageProps, router }) => {
     };
   }, [routerForUseEffect.events]);
 
-  // console.log(route);
-  // console.log(router);
   return (
     <AuthContextProvider>
       <ReadingContextProvider>

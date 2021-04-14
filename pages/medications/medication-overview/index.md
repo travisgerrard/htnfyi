@@ -1,4 +1,8 @@
+import medication01 from './Medication-01.jpg';
+
 # Medication Overview
+
+<img src={medication01} />
 
 Congratulations for making it this far in your diabetes education.
 

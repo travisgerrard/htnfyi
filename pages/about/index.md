@@ -14,8 +14,8 @@ Lead Collaborators:
 
 Lead Support:
 
-> - Virginia Mason Medical Center, Seattle, WA, USA
+> - Virginia Mason Franciscan Health
 
-Copyright 2020 Virginia Mason Medical Center
+Copyright 2021 Virginia Mason Franciscan Health
 
 <ResetButton />

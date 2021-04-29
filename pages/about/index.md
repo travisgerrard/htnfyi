@@ -16,6 +16,10 @@ Lead Support:
 
 > - Virginia Mason Franciscan Health
 
+Contact us:
+
+> <VMMC.Diabetes_Patient_Education_App@virginiamason.org>
+
 Copyright 2021 Virginia Mason Franciscan Health
 
 <ResetButton />

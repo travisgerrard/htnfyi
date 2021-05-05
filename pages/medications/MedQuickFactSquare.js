@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const Container = styled.div`
   display: flex;
@@ -121,12 +122,24 @@ function MedQuickFactBar() {
     <Container>
       <NameContainer>
         <TopContainer>Name</TopContainer>
-        <BottomContainer>Metformin</BottomContainer>
-        <BottomContainer>Sulfonylureas</BottomContainer>
-        <BottomContainer>DPP-4</BottomContainer>
-        <BottomContainer>SGLT2</BottomContainer>
-        <BottomContainer>GLP-1</BottomContainer>
-        <BottomContainer>Insulin</BottomContainer>
+        <BottomContainer>
+          <Link href="/medications/metformin">Metformin</Link>
+        </BottomContainer>
+        <BottomContainer>
+          <Link href="/medications/sulfonylureas">Sulfonylureas</Link>
+        </BottomContainer>
+        <BottomContainer>
+          <Link href="/medications/dpp4-inhibitors">DPP-4</Link>
+        </BottomContainer>
+        <BottomContainer>
+          <Link href="/medications/sglt2-inhibitors">SGLT2</Link>
+        </BottomContainer>
+        <BottomContainer>
+          <Link href="/medications/glp1-agonists">GLP-1</Link>
+        </BottomContainer>
+        <BottomContainer>
+          <Link href="/medications/insulin">Insulin</Link>
+        </BottomContainer>
       </NameContainer>
       <A1cContainer>
         <TopContainer>A1c↓</TopContainer>

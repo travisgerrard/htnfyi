@@ -11,6 +11,7 @@ Lead Collaborators:
 > - Dr. Grace Lee, Endocrinologist
 > - Lynn Benz, RN, MPA
 > - Gregor Derupe, PharmD, BCADM
+> - Kathleen Hargiss , RD
 
 Lead Support:
 

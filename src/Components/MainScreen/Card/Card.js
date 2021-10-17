@@ -43,6 +43,9 @@ const TopicListItem = styled.p`
   line-height: 1;
   margin: 0px;
   cursor: pointer;
+  &:hover {
+    font-size: 21px;
+  }
 `;
 
 const TopicListItemContainer = styled.div`

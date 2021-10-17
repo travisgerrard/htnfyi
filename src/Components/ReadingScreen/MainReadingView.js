@@ -55,7 +55,7 @@ const NavBarButton = styled.p`
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  transition: all 0.25s;
+  transition: all 0.2s ease-out;
   opacity: ${(props) => (props.grayOutButton ? 0.2 : 1)};
   &:hover {
     opacity: ${(props) => (props.grayOutButton ? 0.2 : 0.6)};
@@ -115,9 +115,11 @@ const Image = styled.img`
 export default function MainReadingView({ children }) {
   console.log(children);
   const { state, tryLocalSignin } = useContext(AuthContext);
-  const { state: textState, changeTextSize, setTextSizeOnLoad } = useContext(
-    TextContext
-  );
+  const {
+    state: textState,
+    changeTextSize,
+    setTextSizeOnLoad,
+  } = useContext(TextContext);
 
   useEffect(() => {
     tryLocalSignin();

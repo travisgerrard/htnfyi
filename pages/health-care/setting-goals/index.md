@@ -1,6 +1,6 @@
 # A Strategy for Setting Goals to Improve your Blood Sugar Control
 
-Lifestyle choices such as food preferences and exercise habits affect blood sugar control and, over time, the potential for the long-term complications of diabetes. Changing lifelong ways is very hard! The good news is small changes in everyday living can lead to big improvement in diabetes management.
+Lifestyle choices such as food preferences and exercise habits affect blood pressure control and, over time, the potential for the long-term complications of hypertension. Changing lifelong ways is very hard! The good news is small changes in everyday living can lead to big improvement in hypertension management.
 
 One strategy to consider that many people have found helpful is setting SMART goals. Using the SMART goal framework helps people focus on specific small achievable changes.
 

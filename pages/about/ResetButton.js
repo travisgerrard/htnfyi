@@ -9,7 +9,7 @@ const ResetButtonContainer = styled.div`
   flex-direction: 'row';
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 203, 121, 1);
+  background-color: rgba(255, 65, 65, 0.9);
   color: white;
   text-align: center;
   border-radius: 22px;
@@ -25,7 +25,7 @@ const ResetButtonContainer = styled.div`
   transition: all 0.25s;
   cursor: pointer;
   &:hover {
-    background-color: rgba(0, 203, 121, 0.9);
+    background-color: rgba(255, 65, 65, 1);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
   }
   &:active {

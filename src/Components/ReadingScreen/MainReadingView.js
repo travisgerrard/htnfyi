@@ -16,7 +16,7 @@ const BodyContainer = styled.div`
 
 const NavBar = styled.div`
   position: relative;
-  background-color: rgb(0, 162, 97);
+  background-color: rgb(255, 65, 65);
   width: 100%;
   height: 64px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
@@ -138,44 +138,46 @@ export default function MainReadingView({ children }) {
     img: (props) => <Image {...props} />,
   };
 
+  console.log(state);
+
   if (state.isLoading) return null;
 
-  if (state.token === null) {
-    return <AccessCodeScreen />;
+  // if (state.token === null) {
+  //   return <AccessCodeScreen />;
+  // } else {
+  if (state.disclaimer === null) {
+    return <DisclaimerPage />;
   } else {
-    if (state.disclaimer === null) {
-      return <DisclaimerPage />;
-    } else {
-      return (
-        <>
-          <NavBar>
-            <NavBarText>
-              Aa:{' '}
-              <NavBarButton
-                onClick={() => changeTextSize({ textSize, isIncrease: true })}
-                grayOutButton={increaseTextSizeGrayOut}
-              >
-                +
-              </NavBarButton>{' '}
-              /{' '}
-              <NavBarButton
-                onClick={() => changeTextSize({ textSize, isIncrease: false })}
-                grayOutButton={decreaseTextSizeGrayOut}
-              >
-                -
-              </NavBarButton>
-            </NavBarText>
-            <Link href="/">
-              <NavBarButton style={{ cursor: 'pointer' }}>Close</NavBarButton>
-            </Link>
-          </NavBar>
-          <BodyContainer>
-            <TextContainer>
-              <MDXProvider components={mdComponents}>{children}</MDXProvider>
-            </TextContainer>
-          </BodyContainer>
-        </>
-      );
-    }
+    return (
+      <>
+        <NavBar>
+          <NavBarText>
+            Aa:{' '}
+            <NavBarButton
+              onClick={() => changeTextSize({ textSize, isIncrease: true })}
+              grayOutButton={increaseTextSizeGrayOut}
+            >
+              +
+            </NavBarButton>{' '}
+            /{' '}
+            <NavBarButton
+              onClick={() => changeTextSize({ textSize, isIncrease: false })}
+              grayOutButton={decreaseTextSizeGrayOut}
+            >
+              -
+            </NavBarButton>
+          </NavBarText>
+          <Link href="/">
+            <NavBarButton style={{ cursor: 'pointer' }}>Close</NavBarButton>
+          </Link>
+        </NavBar>
+        <BodyContainer>
+          <TextContainer>
+            <MDXProvider components={mdComponents}>{children}</MDXProvider>
+          </TextContainer>
+        </BodyContainer>
+      </>
+    );
+    // }
   }
 }

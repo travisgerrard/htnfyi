@@ -20,10 +20,10 @@ export default function DisclaimerPage() {
   return (
     <Container>
       <TitleTextDisclaimer>
-        The VM Diabetes Application provides useful information but is not a
+        The Hypertension Application provides useful information but is not a
         substitute for professional medical advice, diagnosis, or treatment. If
         you think you may have a medical emergency, immediately call your doctor
-        or dial 911. Before acting on any of the information in the VM Diabetes
+        or dial 911. Before acting on any of the information in the Hypertension
         Application, consult with your doctor or nurse to make sure that it is
         right for you.
       </TitleTextDisclaimer>

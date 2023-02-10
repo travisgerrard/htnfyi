@@ -1,26 +1,13 @@
 import ResetButton from './ResetButton.js'
 
-# The Diabetes Education Application
+# The Hypertension Education Application
 
-Lead Developer:
+Created by:
 
-> - Dr. Travis Gerrard, General Internist
-
-Lead Collaborators:
-
-> - Dr. Grace Lee, Endocrinologist
-> - Lynn Benz, RN, MPA
-> - Gregor Derupe, PharmD, BCADM
-> - Kathleen Hargiss , RD
-
-Lead Support:
-
-> - Virginia Mason Franciscan Health
+> - Travis Gerrard, MD, General Internist
 
 Contact us:
 
-> <VMMC.Diabetes_Patient_Education_App@virginiamason.org>
-
-Copyright 2021 Virginia Mason Franciscan Health
+> <htnfyi@gmail.com>
 
 <ResetButton />

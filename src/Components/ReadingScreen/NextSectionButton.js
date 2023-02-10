@@ -52,7 +52,7 @@ const NextSectionButtonContainer = styled.div`
 `;
 
 const NextLessonText = styled.div`
-  color: rgb(1, 121, 213);
+  color: rgb(255, 65, 65);
   font-size: 12px;
   font-weight: 900;
   font-family: Helvetica Neue, Arial, sans-serif;
@@ -205,7 +205,7 @@ function NextSectionButton({ route }) {
         )}
         <div>{theNextSectionTitle}</div>
       </div>
-      <IosArrowDropright color="rgb(1, 121, 213)" fontSize="32px" />
+      <IosArrowDropright color="rgb(255, 65, 65)" fontSize="32px" />
     </NextSectionButtonContainer>
   );
 }

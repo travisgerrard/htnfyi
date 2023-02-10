@@ -84,15 +84,15 @@ export default function AccessCodeScreen() {
     signin({ accessCode });
   }
 
-  useEffect(() => {
-    // setIsValidAcessCode(
-    //   !state.errorMessage.length || accessCodeInput.current.shake()
-    // );
-    if (state.token) {
-      navigation.navigate('Disclaimer');
-    }
-    setIsLoading(false);
-  }, [state]);
+  // useEffect(() => {
+  //   setIsValidAcessCode(
+  //     !state.errorMessage.length || accessCodeInput.current.shake()
+  //   );
+  //   if (state.token) {
+  //     navigation.navigate('Disclaimer');
+  //   }
+  //   setIsLoading(false);
+  // }, [state]);
 
   console.log(state);
 

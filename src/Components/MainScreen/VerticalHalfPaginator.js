@@ -120,9 +120,8 @@ function VerticalHalfPaginator() {
 
   const { setReadingArray } = useContext(ReadingContext);
   const { setNextOnReadingList } = useContext(NextToReadContext);
-  const { state: menuScrollState, setScrollValue } = useContext(
-    MenuScrollContext
-  );
+  const { state: menuScrollState, setScrollValue } =
+    useContext(MenuScrollContext);
   const router = useRouter();
 
   const scrollEvent = (e) => {
@@ -204,14 +203,14 @@ function VerticalHalfPaginator() {
             router.push(`/about`).then(() => window.scrollTo(0, 0))
           }
         />
-        <img
+        {/* <img
           src={VM_Small}
           onClick={() =>
             router
               .push(`https://www.virginiamason.org`)
               .then(() => window.scrollTo(0, 0))
           }
-        />
+        /> */}
       </Menu>
       <TopHalfContainer listFullScreen={listFullScreen}>
         <TopHalfMainScreen offsetPercent={offsetPercent} />

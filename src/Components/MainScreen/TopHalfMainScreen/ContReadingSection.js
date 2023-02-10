@@ -30,7 +30,7 @@ const RegularText = styled.p`
 `;
 
 const ReadingButton = styled.p`
-  background-color: rgba(0, 122, 73, 0.9);
+  background-color: rgba(255, 65, 65, 0.9);
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   font-weight: 500;
@@ -43,7 +43,7 @@ const ReadingButton = styled.p`
   border-radius: 25px;
   cursor: pointer;
   &:hover {
-    background-color: rgba(0, 122, 73, 1);
+    background-color: rgba(255, 65, 65, 1);
     color: rgba(255, 255, 255, 1);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   }

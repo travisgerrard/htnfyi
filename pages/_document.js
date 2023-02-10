@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang={this.props.lang || 'en'}>
         <Head>
-          <script
+          {/* <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-13VDQFWFTM"
           ></script>
@@ -48,7 +48,7 @@ export default class MyDocument extends Document {
               });
           `,
             }}
-          />
+          /> */}
         </Head>
         <body>
           <Main />

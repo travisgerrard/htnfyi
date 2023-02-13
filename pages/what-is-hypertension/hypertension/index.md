@@ -1,8 +1,8 @@
-import InsulinResistance01 from './InsulinResistance01.jpg';
+<!-- import InsulinResistance01 from './InsulinResistance01.jpg';
 import InsulinResistance02 from './InsulinResistance02.jpg';
 import InsulinResistance03 from './InsulinResistance03.jpg';
 
-import MultiChoiceQuestion from '../../MultiChoiceQuestion'
+import MultiChoiceQuestion from '../../MultiChoiceQuestion' -->
 
 # Understanding Hypertension
 

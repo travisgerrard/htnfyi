@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { string, number, bool } from 'prop-types';
+// import { string, number, bool } from 'prop-types';
 
 const INITIAL_OFFSET = 25;
 const circleConfig = {
@@ -91,18 +91,18 @@ const CircleProgressBarBase = ({
   );
 };
 
-CircleProgressBarBase.propTypes = {
-  className: string.isRequired,
-  strokeColor: string,
-  strokeWidth: number,
-  innerText: string,
-  legendText: string,
-  percentage: number,
-  trailStrokeWidth: number,
-  trailStrokeColor: string,
-  trailSpaced: bool,
-  speed: number,
-};
+// CircleProgressBarBase.propTypes = {
+//   className: string.isRequired,
+//   strokeColor: string,
+//   strokeWidth: number,
+//   innerText: string,
+//   legendText: string,
+//   percentage: number,
+//   trailStrokeWidth: number,
+//   trailStrokeColor: string,
+//   trailSpaced: bool,
+//   speed: number,
+// };
 
 CircleProgressBarBase.defaultProps = {
   strokeColor: 'blueviolet',

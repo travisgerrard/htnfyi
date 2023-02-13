@@ -1,9 +1,3 @@
-import MultiChoiceQuestion from '../../MultiChoiceQuestion'
-import understanding01 from './understanding01.jpg';
-import understanding02 from './understanding02.jpg';
-import understanding03 from './understanding03.png';
-import understanding04 from './understanding04.gif';
-import understanding05 from './understanding05.gif';
 
 # Understanding Blood Pressure
 
@@ -11,7 +5,7 @@ To understand hypertension, one first needs to understand blood pressure.
 
 Your body has a series of pipes within it to move blood around, these are called blood vessels.
 
-<img src={understanding03} />
+![](/understanding03.png)
 
 
 Blood pressure is a measurement of the pressure that our blood is producing against the walls of our blood vessels and heart.

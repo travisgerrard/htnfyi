@@ -1,9 +1,6 @@
-import MultiChoiceQuestion from '../../MultiChoiceQuestion'
-import introduction01 from './IntroAI.png';
-
 # Introduction
 
-<img src={introduction01} />
+![](IntroAI.png)
 
 Hypertension, also known as high blood pressure, is a condition
 where the blood pressure in your arteries is elevated.
@@ -19,7 +16,7 @@ long-term effects of hypertension that may occur.
 > This program is not a substitute for a provider consultation or visit
 > with a diabetes educator.
 
-<MultiChoiceQuestion
+<!-- <MultiChoiceQuestion
 question={`Type 2 diabetes is an illness where the body is unable to process:`}
 answers={
 [
@@ -28,4 +25,4 @@ answers={
 {answerText: 'Sugar', isAnswer: true},
 ]
 }
-/>
+/> -->

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { string } from 'prop-types';
+// import { string } from 'prop-types';
 
 import CircleProgressBarBase from './CircleProgressBarBase';
 
@@ -44,11 +44,11 @@ const CircleProgressBar = styled(CircleProgressBarBase)`
   }
 `;
 
-CircleProgressBar.propTypes = {
-  textColor: string,
-  strokeColor: string,
-  maxSize: string,
-};
+// CircleProgressBar.propTypes = {
+//   textColor: string,
+//   strokeColor: string,
+//   maxSize: string,
+// };
 
 CircleProgressBar.defaultProps = {
   textColor: 'black',

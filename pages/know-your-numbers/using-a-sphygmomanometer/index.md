@@ -1,10 +1,6 @@
-import usingAGlucometer from './using-a-glucometer.jpg';
-import usingSphygmomanometer01 from './using-a-sphygmomanometer01.jpg';
-import usingSphygmomanometer02 from './using-a-sphygmomanometer02.jpg';
-
 # Testing blood pressure using a blood pressure cuff
 
-<img src={usingSphygmomanometer01} />
+![](/02_01_01.jpg)
 
 The most common method of testing blood pressure is using a sphygmomanometer, otherwise known as a blood pressure cuff.
 
@@ -16,4 +12,4 @@ Your health care provider will often want you to bring your blood pressure cuff 
 
 The AHA has a great inforgraphic with resources regarding monitoring your blood pressure. [These can be found here](https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home)
 
-<img src={usingSphygmomanometer02} />
+![](/02_01_02.jpg)

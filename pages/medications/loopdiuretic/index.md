@@ -1,15 +1,4 @@
-import MedQuickFactBar from '../MedQuickFactBar.js'
-
 # Loop Diuretic
-
-<!-- <MedQuickFactBar
-a1cText={`0.8-1.2%`}
-rountineText={`Weekly / Daily / 2x Daily Injection`}
-lowBloodSugarText={`No`}
-weightChangeText={`Loss`}
-heartBenefitText={`Neutral`}
-costText={`High`}
-/> -->
 
 **Does effect electrolytes.**
 

@@ -1,16 +1,8 @@
-import MultiChoiceQuestion from '../../MultiChoiceQuestion'
-import NegativeEffects01 from './NegativeEffects01.jpg';
-import NegativeEffects02 from './NegativeEffects02.jpg';
-import NegativeEffects03 from './NegativeEffects03.jpg';
-import NegativeEffects04 from './NegativeEffects04.jpg';
-import NegativeEffects05 from './NegativeEffects05.jpg';
-import NegativeEffects06 from './NegativeEffects06.png';
-
 # Complications of Uncontrolled Hypertension
 
-<img src={NegativeEffects06} />
+![](/01_05_01.jpg)
 
-<img src={NegativeEffects02} />
+![](/01_05_02.jpg)
 
 > - Hypertension can damage the small blood vessels in the kidney.
 > - Over time the damaged kidneys are unable to filter the blood of excess fluid and waste from the body.
@@ -20,7 +12,7 @@ import NegativeEffects06 from './NegativeEffects06.png';
 > - Not all patients with chronic kidney disease develop kidney failure.
 > - Blood pressure and blood sugar control can help prevent the development of chronic kidney disease.
 
-<img src={NegativeEffects04} />
+![](/01_05_04.jpg)
 
 > - People with hypertension are more likely to develop a stroke or heart disease.
 > - Hypertension can cause increased deposits of fats or blood clots in the blood vessel walls. Blood clots or deposits can reduce blood flow or completely cut off blood flow to the brain or heart.
@@ -28,7 +20,7 @@ import NegativeEffects06 from './NegativeEffects06.png';
 > - By following a heart healthy diet, avoiding all tobacco, exercising and taking all your medications as prescribed, you may prevent stroke or heart attack.
 > - Call 911 for any symptoms of stroke or heart attack.
 
-<img src={NegativeEffects05} />
+![](/01_05_05.jpg)
 
 > - High blood pressure can damage the blood vessels in the eye leading to a condition called hypertensive retinopathy.
 > - Early symptoms include blurred vision and headaches.

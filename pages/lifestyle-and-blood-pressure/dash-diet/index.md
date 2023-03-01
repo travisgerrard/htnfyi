@@ -1,9 +1,5 @@
-import CarbTable from '../overview/CarbTable.js'
-import AdaCopyright from '../exercise-and-hypertension/AdaCopyright.js'
-import DASHImage from './AIGen.png';
 
-
-<img src={DASHImage} />
+![](/03_02_01.png)
 
 # DASH Diet
 

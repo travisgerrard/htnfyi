@@ -2,8 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { MDXProvider } from '@mdx-js/react';
 
 import styled from 'styled-components';
-import Link from 'next/link';
-import AccessCodeScreen from '../Authorization/AccessCodeScreen';
+import { StyledLink } from '../MainScreen/Card/Card';
 import DisclaimerPage from '../Authorization/DisclaimerPage';
 import { Context as AuthContext } from '../context/AuthContext';
 import { Context as TextContext } from '../context/TextContext';
@@ -74,13 +73,13 @@ const TextContainer = styled.div`
   min-height: 100vh;
 `;
 
-const Header = styled.h1`
+export const Header = styled.h1`
   font-size: 24px;
   font-weight: bold;
   font-family: Helvetica Neue, Arial, sans-serif;
 `;
 
-const RegularText = styled.p`
+export const RegularText = styled.p`
   font-size: ${(props) => props.textSize};
   font-weight: 400;
   font-family: Helvetica Neue, Arial, sans-serif;
@@ -113,7 +112,7 @@ const Image = styled.img`
 `;
 
 export default function MainReadingView({ children }) {
-  console.log(children);
+  // console.log(children);
   const { state, tryLocalSignin } = useContext(AuthContext);
   const {
     state: textState,
@@ -138,7 +137,8 @@ export default function MainReadingView({ children }) {
     img: (props) => <Image {...props} />,
   };
 
-  console.log(state);
+  // console.log(state);
+  console.log(mdComponents);
 
   if (state.isLoading) return null;
 
@@ -167,9 +167,9 @@ export default function MainReadingView({ children }) {
               -
             </NavBarButton>
           </NavBarText>
-          <Link href="/">
+          <StyledLink href="/">
             <NavBarButton style={{ cursor: 'pointer' }}>Close</NavBarButton>
-          </Link>
+          </StyledLink>
         </NavBar>
         <BodyContainer>
           <TextContainer>

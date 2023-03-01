@@ -1,10 +1,7 @@
-import FastFacts01 from './FastFacts01.png';
-import MedQuickFactSquare from '../MedQuickFactSquare.js'
-
-# Diabetes Medications
+# Hypertension Medications
 
 # Fast Facts
 
-<MedQuickFactSquare />
+To Come
 
 <!-- <img src={FastFacts01} /> -->

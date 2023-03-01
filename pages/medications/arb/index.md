@@ -1,15 +1,5 @@
-import MedQuickFactBar from '../MedQuickFactBar.js'
-
 # Angiotensin II receptor blocker (ARB)
 
-<!-- <MedQuickFactBar
-a1cText={`0.5-1%`}
-rountineText={`Daily`}
-lowBloodSugarText={`No`}
-weightChangeText={`Neutral`}
-heartBenefitText={`Neutral`}
-costText={`High`}
-/> -->
 
 **Does effect electrolytes.**
 

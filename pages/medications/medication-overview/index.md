@@ -1,8 +1,6 @@
-import medication01 from './AIGen.png';
-
 # Medication Overview
 
-<img src={medication01} />
+![](/04_01_01.png)
 
 Congratulations for making it this far in your hypertension education.
 

@@ -1,4 +1,3 @@
-import ResetButton from './ResetButton.js'
 
 # The Hypertension Education Application
 
@@ -10,4 +9,3 @@ Contact us:
 
 > <htnfyi@gmail.com>
 
-<ResetButton />

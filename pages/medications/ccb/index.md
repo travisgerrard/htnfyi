@@ -1,15 +1,4 @@
-import MedQuickFactBar from '../MedQuickFactBar.js'
-
 # Calcium Channel Blockers
-<!--
-<MedQuickFactBar
-a1cText={`1-2%`}
-rountineText={`Daily / Twice Daily Pill`}
-lowBloodSugarText={`No`}
-weightChangeText={`Neutral`}
-heartBenefitText={`Potential`}
-costText={`Low`}
-/> -->
 
 **Does not effect the electrolytes.**
 

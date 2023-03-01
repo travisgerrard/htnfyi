@@ -4,7 +4,7 @@ import MultiChoiceQuestion from '../../MultiChoiceQuestion'
 
 # Diagnosing Hypertension
 
-<img src={diagnosingHypertension01} />
+![](/01_04_01.png)
 
 There are often no signs or symptoms when you have hypertention. People may
 have hypertension for years and not know it.

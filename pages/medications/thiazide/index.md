@@ -1,15 +1,4 @@
-import MedQuickFactBar from '../MedQuickFactBar.js'
-
 # Thiazide
-<!--
-<MedQuickFactBar
-a1cText={`0.5-1%`}
-rountineText={`Daily`}
-lowBloodSugarText={`No`}
-weightChangeText={`Loss`}
-heartBenefitText={`Benefit`}
-costText={`High`}
-/> -->
 
 **Does effect electrolytes.**
 

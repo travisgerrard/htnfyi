@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
-import IosArrowForward from 'react-ionicons/lib/IosArrowForward';
-import IosCheckmarkCircleOutline from 'react-ionicons/lib/IosCheckmarkCircleOutline';
 
+import { BsChevronRight, BsCheckCircle } from 'react-icons/bs';
 const Container = styled.div`
   padding-left: 25px;
   padding-right: 25px;
@@ -56,6 +55,21 @@ const TopicListItemContainer = styled.div`
   justify-content: space-between;
 `;
 
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+
+  color: inherit;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+  }
+`;
+
 function Card({ item }) {
   const { id, slug, title, subtitle, sections } = item;
 
@@ -69,9 +83,9 @@ function Card({ item }) {
 
   return (
     <Container key={id}>
-      <Link href={`/${slug}`}>
+      <StyledLink href={`/${slug}`}>
         <Headline>{title}</Headline>
-      </Link>
+      </StyledLink>
       <SectionsCompleted>
         {returnSectionsCompleted()}/{sections.length} LESSONS COMPLETED
       </SectionsCompleted>
@@ -80,17 +94,17 @@ function Card({ item }) {
       {sections.map((section, index) => {
         return (
           <React.Fragment key={section.id}>
-            <Link href={`/${slug}/${section.slug}`}>
+            <StyledLink href={`/${slug}/${section.slug}`}>
               <TopicListItemContainer>
                 <TopicListItem>{section.title}</TopicListItem>
                 <div>
                   {section.hasRead && (
-                    <IosCheckmarkCircleOutline color="rgb(0, 128, 0)" />
+                    <BsCheckCircle color="rgb(0, 128, 0)" fontSize="24px" />
                   )}
-                  <IosArrowForward color="gray" />
+                  <BsChevronRight color="gray" fontSize="24px" />
                 </div>
               </TopicListItemContainer>
-            </Link>
+            </StyledLink>
             <hr />
           </React.Fragment>
         );

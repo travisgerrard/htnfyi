@@ -6,7 +6,9 @@ import {
   NEXT_READING_KEY,
 } from '../MainScreen/VerticalHalfPaginator';
 import styled from 'styled-components';
-import IosArrowDropright from 'react-ionicons/lib/IosArrowDropright';
+
+import { BsArrowRightCircle } from 'react-icons/bs';
+
 import {
   getSection,
   getSubsection,
@@ -205,7 +207,7 @@ function NextSectionButton({ route }) {
         )}
         <div>{theNextSectionTitle}</div>
       </div>
-      <IosArrowDropright color="rgb(255, 65, 65)" fontSize="32px" />
+      <BsArrowRightCircle color="rgb(255, 65, 65)" fontSize="24px" />
     </NextSectionButtonContainer>
   );
 }

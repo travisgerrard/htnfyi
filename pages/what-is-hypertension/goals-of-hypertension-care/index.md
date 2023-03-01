@@ -1,9 +1,6 @@
-import goalsOfDiabetesCare from './AIGen.png';
-import MultiChoiceQuestion from '../../MultiChoiceQuestion'
-
 # Goals of hypertension care
 
-<img src={goalsOfDiabetesCare} />
+![](/01_06_01.png)
 
 The goal of care in treatment of hypertension is to achieve and
 maintain an ideal blood pressure, healthy fat levels of the blood
@@ -32,15 +29,3 @@ your blood presure at the target levels.
 
 Goals for lipid management will be defined by your provider based on
 your overall health, age and goals of care.
-
-
-<MultiChoiceQuestion
-question={`What the goal A1C for most patients?`}
-answers={
-[
-{answerText: 'Less than 5%', isAnswer: false},
-{answerText: 'Less than 7%', isAnswer: true},
-{answerText: 'Less than 10%', isAnswer: false},
-]
-}
-/>

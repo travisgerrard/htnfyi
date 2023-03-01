@@ -6,9 +6,9 @@ import React, {
   useLayoutEffect,
 } from 'react';
 import styled from 'styled-components';
-import IosArrowDropup from 'react-ionicons/lib/IosArrowDropup';
-import IosArrowDropdown from 'react-ionicons/lib/IosArrowDropdown';
-import IosMenu from 'react-ionicons/lib/IosMenu';
+
+import { BsArrowUpCircle, BsArrowDownCircle, BsJustify } from 'react-icons/bs';
+
 import Card from './Card/Card';
 import TopHalfMainScreenIndex from './TopHalfMainScreen/TopHalfMainScreenIndex';
 import { Context as ReadingContext } from '../context/ReadingContext';
@@ -195,9 +195,9 @@ function VerticalHalfPaginator() {
   return (
     <Container>
       <Menu listFullScreen={listFullScreen}>
-        <IosMenu
+        <BsJustify
           color="white"
-          fontSize="32px"
+          size="32px"
           style={{ padding: '26px', cursor: 'pointer' }}
           onClick={() =>
             router.push(`/about`).then(() => window.scrollTo(0, 0))
@@ -253,9 +253,9 @@ const CardsArray = ({ item, setListFullScreen, listFullScreen }) => {
         }
       >
         {listFullScreen === '50vh' ? (
-          <IosArrowDropup fontSize="32px" style={{ cursor: 'pointer' }} />
+          <BsArrowUpCircle size="28px" style={{ cursor: 'pointer' }} />
         ) : (
-          <IosArrowDropdown fontSize="32px" style={{ cursor: 'pointer' }} />
+          <BsArrowDownCircle size="28px" style={{ cursor: 'pointer' }} />
         )}
       </Title>
       <Card key={readingItem[0].id} item={readingItem[0]} />

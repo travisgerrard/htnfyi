@@ -1,15 +1,4 @@
-import MedQuickFactBar from '../MedQuickFactBar.js'
-
 # Angiotensin-converting-enzyme inhibitors (ACE inhibitors or ACEi)
-
-<!-- <MedQuickFactBar
-a1cText={`1-2%`}
-rountineText={`Daily / Twice Daily Pill`}
-lowBloodSugarText={`Yes - Monitor`}
-weightChangeText={`Gain`}
-heartBenefitText={`Neutral`}
-costText={`Low`}
-/> -->
 
 **Does effect electrolytes.**
 

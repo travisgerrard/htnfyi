@@ -1,10 +1,6 @@
-import preventativeCare01 from './AIGen01.png';
-import preventativeCare02 from './preventative-care02.jpg';
-import preventativeCare03 from './preventative-care03.jpg';
-
 # Recommended routine care for health
 
-<img src={preventativeCare01} />
+![](/05_01_01.png)
 
 **Hypertension Provider Vists**
 

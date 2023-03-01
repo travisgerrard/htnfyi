@@ -1,7 +1,3 @@
-import CarbTable from '../overview/CarbTable.js'
-import AdaCopyright from '../exercise-and-hypertension/AdaCopyright.js'
-import CaloriesImage from './calories_on_the_new_nutrition_facts_label.png';
-
 # Salt, Sodium, Potassium and Hypertension
 
 Minerals are essential for our bodies to stay healthy. We get minerals from eating plants and animals and drinking water. The five major minerals in our bodies are calcium, phosphorus, **potassium**, **sodium**, and magnesium. Other minerals, like iron, chlorine, cobalt, copper, zinc, manganese, molybdenum, iodine, and selenium, also help us stay healthy. Plants get minerals from the soil and animals get minerals by eating plants and other animals.
@@ -12,7 +8,7 @@ Minerals are essential for our bodies to stay healthy. We get minerals from eati
 
 Most commonly thought of as common table salt, it also comes in process foods. Any food that has a food label likely has some added salt. Added salt is where the majority of salt in peoples diets come from. You can find it listed in the label below. There is 160mg of sodium in the label below.
 
-<img src={CaloriesImage} />
+![](/03_03_01.png)
 
 Sodium is a vital mineral, helping electric signals get around the body. Too much salt though and it just sits in our blood, drawing extra fluid into our blood as well to regulate the overall concentration of sodium, resulting in a higher blood pressure. The average daily amount of sodium in an americans diet is 3400 mg.  While we need a little sodium in our diets, its been shown that limiting daily sodium intake to between 1000mg - 1500mg can help reduce the systolic blood pressure up to 6 mm Hg.
 

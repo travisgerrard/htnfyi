@@ -1,9 +1,3 @@
-<!-- import InsulinResistance01 from './InsulinResistance01.jpg';
-import InsulinResistance02 from './InsulinResistance02.jpg';
-import InsulinResistance03 from './InsulinResistance03.jpg';
-
-import MultiChoiceQuestion from '../../MultiChoiceQuestion' -->
-
 # Understanding Hypertension
 
 Hypertension is a general term for when either your low (diastolic) number, high (systolic) number, or both recorded numbers in your blood pressure measurement are above what is accepted as the normal, healthy range.

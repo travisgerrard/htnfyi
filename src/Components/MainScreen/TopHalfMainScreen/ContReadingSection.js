@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link from 'next/link';
 import { LAST_SECTION_ID } from '../../ReadingScreen/NextSectionButton';
+
+import { StyledLink } from '../Card/Card';
 
 const TextContainer = styled.div`
   display: flex;
@@ -83,11 +84,11 @@ const ContReadingSection = ({
              ${nextOnReadingList.theNextSectionTitle}`}
               </RegularText>
               <RegularText>You're making great progress.</RegularText>
-              <Link
+              <StyledLink
                 href={`/${nextOnReadingList.sectionSlug}/${nextOnReadingList.theNextSectionSlug}`}
               >
                 <ReadingButton>Continue Reading</ReadingButton>
-              </Link>
+              </StyledLink>
             </>
           )}
         </TextContainer>
@@ -97,9 +98,9 @@ const ContReadingSection = ({
           <RegularText>You're on your way to becoming</RegularText>
           <RegularText>a diabetes expert! Let's start with</RegularText>
           <RegularText>the courses below.</RegularText>
-          <Link href="/what-is-diabetes/introduction">
+          <StyledLink href="/what-is-diabetes/introduction">
             <ReadingButton>Get Reading Now</ReadingButton>
-          </Link>
+          </StyledLink>
         </TextContainer>
       )}
     </div>

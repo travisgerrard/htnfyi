@@ -1,15 +1,4 @@
-import MedQuickFactBar from '../MedQuickFactBar.js'
-
 # Beta blocker
-
-<!-- <MedQuickFactBar
-a1cText={`∞`}
-rountineText={`Daily / Twice Daily Injection`}
-lowBloodSugarText={`Yes - Monitor`}
-weightChangeText={`Gain`}
-heartBenefitText={`Neutral`}
-costText={`Low to High`}
-/> -->
 
 **Does not effect electrolytes.**
 

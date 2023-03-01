@@ -1,6 +1,6 @@
 # Introduction
 
-![](IntroAI.png)
+![](/01_01_01.png)
 
 Hypertension, also known as high blood pressure, is a condition
 where the blood pressure in your arteries is elevated.
@@ -16,13 +16,3 @@ long-term effects of hypertension that may occur.
 > This program is not a substitute for a provider consultation or visit
 > with a diabetes educator.
 
-<!-- <MultiChoiceQuestion
-question={`Type 2 diabetes is an illness where the body is unable to process:`}
-answers={
-[
-{answerText: 'Protein', isAnswer: false},
-{answerText: 'Fats', isAnswer: false},
-{answerText: 'Sugar', isAnswer: true},
-]
-}
-/> -->

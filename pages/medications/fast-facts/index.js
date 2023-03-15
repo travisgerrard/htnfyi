@@ -12,17 +12,9 @@ export default function index() {
   const { textSize } = textState;
   return (
     <div>
-      <Header>Overview</Header>
-      <RegularText textSize={textSize}>
-        Lifestyle plays an important role in the development and management of
-        hypertension. Unhealthy habits such as eating an unhealthy diet,
-        drinking alcohol, and living a sedentary lifestyle can contribute to
-        high blood pressure. Regular physical activity, a healthy diet, and
-        avoiding excess weight can help to prevent and manage hypertension.
-        Below is a general outline of the impact our lifestyle has on
-        hypertension. In the following sections we will dive into each one in a
-        bit more detail.
-      </RegularText>
+      <Header>Hypertension Medications</Header>
+      <Header>Fast Facts</Header>
+
       <LifestyleQuickFactSquare />
     </div>
   );

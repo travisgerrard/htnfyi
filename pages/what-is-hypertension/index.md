@@ -1,17 +1,17 @@
-# What is Diabetes
+# What is hypertension
 
-In this section you will learn the diabetes mellitus (DM) basics, regarding what diabetes is and how it is diagnosed.
+In this section you will learn the hypertension (HTN) basics, regarding what hypertension is and how it is diagnosed.
 
 <hr />
 
-[Introduction](/what-is-diabetes/introduction)
+[Introduction](/what-is-hypertension/introduction)
 
-[Understanding Diabetes](/what-is-diabetes/understanding-diabetes)
+[Understanding Blood Pressure](/what-is-hypertension/understanding-blood-pressure)
 
-[Insulin Resistance](/what-is-diabetes/insulin-resistance)
+[Hypertension](/what-is-hypertension/hypertension)
 
-[Diagnosing Diabetes](/what-is-diabetes/diagnosing-diabetes)
+[Diagnosing Hypertension](/what-is-hypertension/diagnosing-hypertension)
 
-[Negative Effects of Hyperglycemia](/what-is-diabetes/negative-effects-of-hyperglycemia)
+[Complications of Uncontrolled Hypertension](/what-is-hypertension/negative-effects-of-hypertension)
 
-[Goals of diabetes care](/what-is-diabetes/goals-of-diabetes-care)
+[Goals of Hypertension Care](/what-is-hypertension/goals-of-hypertension-care)

@@ -161,7 +161,7 @@ export const DATA = [
     id: '7',
     title: 'Health Care',
     slug: 'health-care',
-    subtitle: 'Recommended routine care for health when you have diabetes',
+    subtitle: 'Recommended routine care for health when you have hypertension',
     sections: [
       {
         id: '7_1',

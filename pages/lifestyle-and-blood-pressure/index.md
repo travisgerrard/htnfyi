@@ -1,13 +1,17 @@
-# Food and Blood Sugar
+# Lifestyle and Blood Pressure
 
-Looking into how food affects your blood sugar
+Looking into how you live your life affects your blood pressure
 
 <hr />
 
-[The Basics](/food-and-blood-sugar/the-basics)
+[Overview](/lifestyle-and-blood-pressure/overview)
 
-[The Diabetes Plate Method](/food-and-blood-sugar/the-diabetes-plate-method)
+[DASH Diet](/lifestyle-and-blood-pressure/dash-diet)
 
-[Carb Counting](/food-and-blood-sugar/carb-counting)
+[Salt, Sodium, Potassium and Hypertension](/lifestyle-and-blood-pressure/sodium-potassium)
 
-[Alcohol](/food-and-blood-sugar/alcohol)
+[Exercise as Treatment of Hypertension](/lifestyle-and-blood-pressure/exercise-and-hypertension)
+
+[Alcohol reduction as treatment of hypertension](/lifestyle-and-blood-pressure/alcohol-and-hypertension)
+
+

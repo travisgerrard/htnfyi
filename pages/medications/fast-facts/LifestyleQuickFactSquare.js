@@ -43,7 +43,7 @@ const CostContainer = styled.div`
   flex-direction: column;
   font-family: Helvetica Neue, Arial, sans-serif;
   background-color: #32b3c4;
-  width: 30%;
+  width: 50%;
   text-align: center;
 `;
 
@@ -86,47 +86,33 @@ function MedQuickFactBar() {
   return (
     <Container>
       <NameContainer>
-        <TopContainer>Lifestyle Modification</TopContainer>
+        <TopContainer>Medication</TopContainer>
         <BottomContainer>
-          <Link href="/lifestyle-and-blood-pressure/dash-diet">
-            Weight Loss
+          <Link href="/medications/ccb">Calcium Channel Blocker</Link>
+        </BottomContainer>
+
+        <BottomContainer>
+          <Link href="/medications/acei">ACEi</Link>
+        </BottomContainer>
+        <BottomContainer>
+          <Link href="/medications/arb">ARB</Link>
+        </BottomContainer>
+        <BottomContainer>
+          <Link href="/medications/thiazide">Thiazide Diuretic</Link>
+        </BottomContainer>
+        <BottomContainer>
+          <Link href="/medications/loopdiuretic">Loop Diuretic</Link>
+        </BottomContainer>
+        <BottomContainer>
+          <Link href="/medications/antimineralocorticoid">
+            Antimineralocorticoid
           </Link>
         </BottomContainer>
         <BottomContainer>
-          <Link href="/medications/sulfonylureas">DASH Diet</Link>
-        </BottomContainer>
-        <BottomContainer>
-          <Link href="/lifestyle-and-blood-pressure/dash-diet">
-            Sodium (Salt)
-          </Link>
-        </BottomContainer>
-        <BottomContainer>
-          <Link href="/lifestyle-and-blood-pressure/sodium-potassium">
-            Potassium
-          </Link>
-        </BottomContainer>
-        <BottomContainer>
-          <Link href="/lifestyle-and-blood-pressure/exercise-and-hypertension">
-            Aerobic Exercise
-          </Link>
-        </BottomContainer>
-        <BottomContainer>
-          <Link href="/lifestyle-and-blood-pressure/exercise-and-hypertension">
-            Resistance Exercise
-          </Link>
-        </BottomContainer>
-        <BottomContainer>
-          <Link href="/lifestyle-and-blood-pressure/exercise-and-hypertension">
-            Isometric Exercise
-          </Link>
-        </BottomContainer>
-        <BottomContainer>
-          <Link href="/lifestyle-and-blood-pressure/alcohol-and-hypertension">
-            Alcohol Reduction
-          </Link>
+          <Link href="/medications/bblockers">Beta blockers</Link>
         </BottomContainer>
       </NameContainer>
-
+      {/*
       <RoutineContainer>
         <TopContainer>Recommendation</TopContainer>
         <BottomContainer>
@@ -134,9 +120,6 @@ function MedQuickFactBar() {
             Lose at least 1kg with goal of reaching as close to ideal body
             weight as able
           </span>
-        </BottomContainer>
-        <BottomContainer>
-          <span>Diet that is rich in fruits and vegitables</span>
         </BottomContainer>
         <BottomContainer>
           <span>Between 1000mg - 1500mg per day</span>
@@ -159,36 +142,33 @@ function MedQuickFactBar() {
             women
           </span>
         </BottomContainer>
-      </RoutineContainer>
+      </RoutineContainer> */}
 
       <CostContainer>
         <TopContainer>
-          <span>Impact on SBP</span>
+          <span>Impact on BP (SP / DP)</span>
         </TopContainer>
 
         <BottomContainer>
-          <span>1 mm Hg per Kg lost</span>
+          <span>10 - 20 / 8 - 12 mm Hg</span>
         </BottomContainer>
         <BottomContainer>
-          <span>11 mm Hg</span>
+          <span>7 - 17 / 7 - 13 mm Hg</span>
         </BottomContainer>
         <BottomContainer>
-          <span>5 mm Hg</span>
+          <span>7 - 17 / 7 - 13 mm Hg</span>
         </BottomContainer>
         <BottomContainer>
-          <span>4 mm Hg</span>
+          <span>10 - 20 / 7 - 13 mm Hg</span>
         </BottomContainer>
         <BottomContainer>
-          <span>5 mm Hg</span>
+          <span>10 - 20 / 4 - 12 mm Hg</span>
         </BottomContainer>
         <BottomContainer>
-          <span>4 mm Hg</span>
+          <span>5 - 10 / 1 - 4 mm Hg</span>
         </BottomContainer>
         <BottomContainer>
-          <span>5 mm Hg</span>
-        </BottomContainer>
-        <BottomContainer>
-          <span>4 mm Hg</span>
+          <span>10 - 20 / 10 - 14 mm Hg</span>
         </BottomContainer>
       </CostContainer>
     </Container>

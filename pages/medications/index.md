@@ -1,21 +1,23 @@
 # Medications
 
-In this section we will discuss medications which you can use to control your diabetes.
+In this section we will discuss medications which you can use to control hypertension.
 
 <hr />
 
-[Medication Overview](/medications/medication-overview)
+[Medication Overview](http://localhost:3000/medications/medication-overview)
 
-[Metformin](/medications/metformin)
+[Calcium Channel Blocker](http://localhost:3000/medications/ccb)
 
-[Sulfonylureas](/medications/sulfonylureas)
+[ACEi](http://localhost:3000/medications/acei)
 
-[DPP-4 inhibitors](/medications/dpp4-inhibitors)
+[ARB](http://localhost:3000/medications/arb)
 
-[SGLT2 inhibitors](/medications/sglt2-inhibitors)
+[Thiazide Diuretic](http://localhost:3000/medications/thiazide)
 
-[GLP-1 receptor agonists](/medications/glp1-agonists)
+[Loop Diuretic](http://localhost:3000/medications/loopdiuretic)
 
-[Insulin](/medications/insulin)
+[Antimineralocorticoid](http://localhost:3000/medications/antimineralocorticoid)
 
-[Fast Facts](/medications/fast-facts)
+[Beta blockers](http://localhost:3000/medications/bblockers)
+
+[Fast Facts](http://localhost:3000/medications/fast-facts)

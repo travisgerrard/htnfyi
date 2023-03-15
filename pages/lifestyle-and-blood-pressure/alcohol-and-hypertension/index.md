@@ -1,5 +1,3 @@
-import alcohol01 from './AIGen.png';
-
 # Alcohol
 
 ![](/03_05_01.png)

@@ -1,11 +1,13 @@
 # Health Care
 
-Recommended routine care for health when you have diabetes
+Recommended routine care for health when you have hypertension
 
 <hr />
 
 [Preventative Care](/health-care/preventative-care)
 
-[What to do if...](/health-care/what-to-do-if)
+[Doctor Visit Prep](/health-care/doctor-visit-prep)
+
+[Setting Goals](/health-care/setting-goals)
 
 [References](/health-care/references)

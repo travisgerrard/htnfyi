@@ -1,11 +1,9 @@
-# Know your numbers-track your blood sugar
+# Know your numbers-track your blood pressure
 
-Because diabetes affects the body’s ability to use glucose for energy, it is important for persons with diabetes to routinely check their blood sugar during the day.
+Because hypertension affects all aspects of out body, it is important for persons with hypertension to routinely check their blood pressre.
 
 <hr />
 
-[Using a glucometer](/what-is-diabetes/using-a-glucometer)
+[Using a Blood Pressure Cuff](/know-your-numbers/using-a-sphygmomanometer)
 
-[Tracking blood sugar](/what-is-diabetes/tracking-blood-sugars)
-
-[Hemoglobin A1C](/what-is-diabetes/hemoglobin-a1c)
+[Tracking Blood Pressure](/know-your-numbers/tracking-blood-pressure)

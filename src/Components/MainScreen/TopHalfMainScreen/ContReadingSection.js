@@ -96,7 +96,7 @@ const ContReadingSection = ({
         <TextContainer>
           <TextCallout>Hello!</TextCallout>
           <RegularText>You're on your way to becoming</RegularText>
-          <RegularText>a diabetes expert! Let's start with</RegularText>
+          <RegularText>a hypertention expert! Let's start with</RegularText>
           <RegularText>the courses below.</RegularText>
           <StyledLink href="/what-is-hypertension/introduction">
             <ReadingButton>Get Reading Now</ReadingButton>

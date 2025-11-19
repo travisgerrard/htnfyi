@@ -68,6 +68,33 @@ const Menu = styled.div`
   }
 `;
 
+const DropdownMenu = styled.div`
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+`;
+
+const DropdownItem = styled.div`
+  padding: 12px 20px;
+  cursor: pointer;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+`;
+
 const TopHalfContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -188,6 +215,7 @@ function VerticalHalfPaginator() {
 
   const [listFullScreen, setListFullScreen] = useState('50vh');
   const [offsetPercent, setOffsetPercent] = useState(1);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const { state: readingState } = useContext(ReadingContext);
   const { readingArray } = readingState;
@@ -195,14 +223,34 @@ function VerticalHalfPaginator() {
   return (
     <Container>
       <Menu listFullScreen={listFullScreen}>
-        <BsJustify
-          color="white"
-          size="32px"
-          style={{ padding: '26px', cursor: 'pointer' }}
-          onClick={() =>
-            router.push(`/about`).then(() => window.scrollTo(0, 0))
-          }
-        />
+        <div style={{ position: 'relative' }}>
+          <BsJustify
+            color="white"
+            size="32px"
+            style={{ padding: '26px', cursor: 'pointer' }}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          />
+          {isMenuOpen && (
+            <DropdownMenu>
+              <DropdownItem
+                onClick={() => {
+                  router.push('/about').then(() => window.scrollTo(0, 0));
+                  setIsMenuOpen(false);
+                }}
+              >
+                About
+              </DropdownItem>
+              <DropdownItem
+                onClick={() => {
+                  router.push('/privacy').then(() => window.scrollTo(0, 0));
+                  setIsMenuOpen(false);
+                }}
+              >
+                Privacy Policy
+              </DropdownItem>
+            </DropdownMenu>
+          )}
+        </div>
         {/* <img
           src={VM_Small}
           onClick={() =>

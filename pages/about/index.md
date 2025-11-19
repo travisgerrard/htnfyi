@@ -9,3 +9,9 @@ Contact us:
 
 > <htnfyi@gmail.com>
 
+
+# Support
+
+For any support inquiries, please contact us at:
+
+> <htnfyi@gmail.com>

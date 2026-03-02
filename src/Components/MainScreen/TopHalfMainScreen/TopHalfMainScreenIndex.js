@@ -47,8 +47,8 @@ function TopHalfMainScreenIndex({ percent, offsetPercent, nextOnReadingList }) {
     <CircleContainer>
       <CircularProgressIndicator
         percentage={percent}
-        trailStrokeColor="rgb(255, 50, 50, 0.25)"
-        strokeColor="rgb(255, 50, 50)"
+        trailStrokeColor="rgba(42, 142, 142, 0.25)"
+        strokeColor="#2A8E8E"
         strokeWidth={2}
         trailStrokeWidth={2}
         textColor="rgba(255, 255, 255, 0.75)"

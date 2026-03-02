@@ -15,7 +15,7 @@ const BodyContainer = styled.div`
 
 const NavBar = styled.div`
   position: relative;
-  background-color: rgb(255, 65, 65);
+  background-color: #2A8E8E;
   width: 100%;
   height: 64px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
